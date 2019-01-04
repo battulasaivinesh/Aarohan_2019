@@ -112,7 +112,8 @@ body {
     font-size: 16px;
     line-height: 1.42857143;
     color: #333;
-    background-color: #fff
+    background-color: #fff;
+    overflow-y: scroll;
 }
 
 button,
@@ -2576,11 +2577,11 @@ img {
 }
 
 #root {
-    overflow-y: hidden
+    overflow-y: scroll
 }
 
 html.ready {
-    overflow-y: auto
+    overflow-y: scroll
 }
 
 .container,
@@ -2976,13 +2977,7 @@ p {
     margin-bottom: 16px
 }
 
-.p,
-.p *,
-p,
-p * {
-    font-size: 20px;
-    line-height: 24px
-}
+
 
 .p:last-child,
 p:last-child {
@@ -4174,3 +4169,8 @@ hr {
     padding-top: 16px;
     padding-bottom: 14px
 }
+
+
+::-webkit-scrollbar {
+    display: none;
+    }

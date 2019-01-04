@@ -11,9 +11,25 @@
     
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     
     <script async="" src="js/js"></script>
+
+     <!-- landing -->
+    
+     <link rel="stylesheet" href="css/index.css">
+    
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
+    
+
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"/>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
     
     <style>
         .overlay {
@@ -66,7 +82,57 @@
           }
         }
     </style>
+    <style>
+        .menu-2 {
+        position: relative;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        margin: 50px;
+        cursor: pointer;
+        transition: all 0.3s;
+        }
+        .menu-2:before, .menu-2:after {
+        content: "";
+        position: absolute;
+        transition: all 0.3s;
+        }
 
+        .menu-2 {
+        border: 4px solid #000000;
+        }
+        .menu-2:hover {
+        border-color: aqua;
+        }
+        .menu-2:before, .menu-2:after {
+        background-color: #000000;
+        height: 4px;
+        width: 30px;
+        top: 50%;
+        left: 50%;
+        margin-left: -15px;
+        }
+        .menu-2:before {
+        margin-top: -6px;
+        }
+        .menu-2:after {
+        margin-top: 4px;
+        }
+
+        .menu-2-active {
+        transform: rotate(45deg);
+        border-color: red !important;
+        background-color: red !important;
+        }
+        .menu-2-active:before, .menu-2-active:after {
+        margin-left: -15px !important;
+        margin-top: -2px !important;
+        }
+        .menu-2-active:after {
+        transform: rotate(-90deg) !important;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -80,6 +146,22 @@
             </div>
         </div>
     </div>
+
+    <!-- menu 
+    <header>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="setTimeout(closeNav,1000);">&times;</a>
+            <a id="a1" href="#">About</a>
+            <a id="a2" href="#">Services</a>
+            <a id="a3" href="#">Clients</a>
+                    
+        </div>
+    </header>
+
+    <button id="open" class="menubtn" onclick="setTimeout(openNav, 1000);"> 
+        <a class="menu-2" data-menu="2" style="z-index: 20;font-size:30px; position: fixed; right: 0%; top: 0%;" ></a>
+    </button>
+-->
     
     <div id="root">
         <!-- <header class="header">
@@ -92,16 +174,42 @@
         </header> -->
 
         <div id="wrapper">
+
+            <!-- landing -->
+                <section id="landing" >
+                    <div class="section_wrap" style="display: flex">
+                        <div class="view view-before">
+                            <div class="wrapper-before">
+                            <div class="birdimg">
+                                <img src="./img/image2.png" />
+                            </div>
+                            </div>
+                        </div>
+                        <div id="my_resizable" class="view view-after" style="position: absolute">
+                            <div class="wrapper-after">
+                                <div class="birdimg">
+                                    <img src="./img/image1.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
             <section class="section about">
                 <div class="about__intro" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
                     <div class="about__logo">
                         <h1 style="font-size:5em;">About Us</h1>
                     </div>
                 </div>
-                <div class="about__animation image-animation">
+
+                <div   id="trigger1" class="about__animation image-animation">
                     <div class="image-animation__img" style="opacity: 0; transform: matrix(3, 0, 0, 3, 0, 0); position: absolute; top: 0px;">
                         <figure class="fit-wrapper"><img class="lazy loaded" width="1920" height="1200" src="img/1.jpg" style=""> </figure>
                     </div>
+                    <div id="animate1" class="scroll-txt">
+                            <h1>ABOUT US</h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        </div>
                 </div>
                 <div class="about__info content-info">
                     <div class="container-fluid">
@@ -370,20 +478,20 @@
                     </div>
                 </div>
             </section>
-            <section class="section1">
+            <section class="section1 part">
                 <div style="background-color:springgreen;width:100vw;height:100vh;">
                     <div style="height:auto;text-align:center;font-size:5em";>
                         <h1>The Team</h1>
                     </div>
                 </div>
             </section>
-            <section class="section2">
+            <section class="section2 part">
                     <div style="background-color:teal;width:100vw;height:100vh;">
                         <div style="height:auto;text-align:center;font-size:5em";>
                             <h1>Previous Sponsors</h1>
                         </div>
                     </div>
-                </section>
+            </section>
             <footer class="footer">
                 <div class="container-fluid text-animate" style="opacity: 0; transform: translate(0%, 40%) matrix(1, 0, 0, 1, 0, 0);">
                     <div class="footer__contacts">
@@ -423,48 +531,83 @@
                 <i class="fa fa-instagram" style="font-size:24px;padding-bottom: 25%;"></i></br>
                 <i class="fa fa-youtube-play" style="font-size:20px;padding-bottom: 25%;"></i></br>
             </div>
-    
+            
+
             <div id="myNav" class="overlay">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" >&times;</a>
+                
                 <div class="overlay-content">
+                  <a data-goto="#landing" href="#" onclick="closeNav()">Home</a>
                   <a data-goto=".about" href="#" onclick="closeNav()">About</a>
                   <a href="#" onclick="closeNav()">Services</a>
                   <a href="#" onclick="closeNav()">Clients</a>
                   <a href="#"onclick="closeNav()">Contact</a>
                 </div>
             </div>
-                
-            <a><span class="menu" style="color:black;font-size:30px;z-index: 5; position: fixed; right: 5%; top: 5%;" onclick="setTimeout(openNav, 500);">&#9776; Menu</span></a>
-                    <script>
-                        $(document).ready(function(){
-                            $(".menu").click(function(){
-                                var w = ($(window).width() / (1.25));
-                                var h = ($(window).height()/ (1.25));
-                                var l = ($(window).width()/ (10));
-                                $(".section").fadeOut(1000,"swing",);
-                                $(".section").fadeIn();
-                                $(".part").animate({marginLeft: l,height: h,width: w});
-    
-                                var w = ($(window).width());
-                                var h = ($(window).height());
-                                var l = 0;
-                                $(".part").delay(1000).animate({marginLeft: l,height: h,width: w});
+            <script>
+                function closeNav() {
+                    document.getElementById("myNav").style.width = "0%";
+                }
+            </script>
+            <a class="menu-2" data-menu="2" style="z-index: 20;font-size:30px; position: fixed; right: 0%; top: 0%;" ></a>
+           
+
+            <script>
+                var menu = $('.menu-2');
+                menu.on('click', function() {
+                var menuNum = $(this).data('menu');
+                $(this).toggleClass('menu-'+ menuNum +'-active');
+                })
+                // for menu closing
+                $(document).ready(function(){
+                            $(".menu-2").click(function(){
+                                if(document.getElementById("myNav").style.width=="100%")
+                                {
+                                    document.getElementById("myNav").style.width = "0%"; 
+                                }
+                                else
+                                {
+                                    document.getElementById("myNav").style.width = "100%";
+                                }
+                            });
+                            $(".overlay-content a").click(function(){
+                                document.getElementById("myNav").style.width = "0%"; 
                             });
                         });
-                        function openNav() {
-                        document.getElementById("myNav").style.width = "100%";
-                        
-                        }
-    
-                        function closeNav() {
-                        document.getElementById("myNav").style.width = "0%";
-                        }
-                    </script>
-    
-    
 
+                
+                // closing function for menu options
+            
+                    var menuopt = $('.overlay-content a');
+                    var menu = $('.menu-2');
+
+                    menuopt.on('click', function() {
+                        var menuNum = $('.menu-2').data('menu');
+                        $('.menu-2').toggleClass('menu-'+ menuNum +'-active');
+                    })              
+                
+            </script>
+
+            <!-- animation for menu onclick() -->
+            <!-- <script>
+                $(document).ready(function(){
+                    $(".menu").click(function(){
+                        var w = ($(window).width() / (1.25));
+                        var h = ($(window).height()/ (1.25));
+                        var l = ($(window).width()/ (10));
+                        $(".section").fadeOut(1000,"swing",);
+                        $(".section").fadeIn();
+                        $(".part").animate({marginLeft: l,height: h,width: w});
+
+                        var w = ($(window).width());
+                        var h = ($(window).height());
+                        var l = 0;
+                        $(".part").delay(1000).animate({marginLeft: l,height: h,width: w});
+                    });
+                });
+            </script> -->
     </div>
     <script type="text/javascript" src="js/app.js" async="async"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

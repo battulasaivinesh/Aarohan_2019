@@ -1,0 +1,151 @@
+
+body {
+  margin: 0;
+  background: #818181;
+}
+
+/* menubar */
+
+.sidenav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow: hidden;
+    transition: 0.5s;
+    text-align:center;
+  }
+  
+  .sidenav a {
+    margin: 2rem;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  
+  }
+  
+  .sidenav a:hover{
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+/* manu button */
+.menubtn {
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  color: #f1f1f1;
+  font-size:1.2rem;
+  cursor:pointer;
+  border: 0;
+  background: transparent;
+  margin: 2rem;
+} 
+
+/* container */
+#container {
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+/* landing page */
+
+#landing {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  overflow-x: hidden;
+  position: relative;
+}
+
+
+  .view{
+    width: 100vw;
+  }
+  .view-after {
+    position: absolute;
+    width:50%;
+  }
+
+  .wrapper-after {
+    overflow:hidden;
+  }
+  
+  .birdimg {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+  }
+  
+  .birdimg img {
+    width: 35vw;
+    height: 35vw;
+    animation-name: translate;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+  }
+
+  .ui-resizable-e {
+    width: 10px !important;  
+    top: 50% !important;
+    height: 15px !important;
+  }
+
+
+  /* about us */
+  .scroll-txt {
+    position: fixed;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    color: white;
+    z-index: 1;
+    padding-right: 25%;
+  }
+
+  .scroll-txt p {
+    font-size: 1rem;
+  }
+
+  /* mobile screen */
+
+  @media screen and (max-width: 600px) {
+    /*landing */
+
+    .birdimg img {
+      width: 60vw;
+      height: 60vw;
+    }
+
+    .view-after{
+      border-right: 2px solid orange;
+    }
+
+    .ui-resizable-e{
+      background: url(http://i.stack.imgur.com/Xkiaa.png) no-repeat; 
+    } 
+  }
+
+  /* animation */
+  /* main anim */
+@keyframes translate {
+  0%   {transform: translateY(0)}
+  50%  {transform: translateY(-20px)}
+  100% {transform: translateY(0)}
+}
