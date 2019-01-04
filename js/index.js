@@ -84,7 +84,7 @@
                                     Math.round(m/w * 300),
                                     255,
                                 ];
-                                    $('#landing').css('background','rgb('+rgb.join(',')+')');
+                                    $('.about').css('background','rgb('+rgb.join(',')+')');
                                 m--;     
                             }
                             if(l >= w/2)
@@ -119,7 +119,7 @@
     } );
 
 
-//scroll magic
+/*scroll magic
     var controller = new ScrollMagic.Controller();
 
     var timeline = new TimelineMax();
@@ -137,5 +137,5 @@
     })
     .setTween(timeline) 
     .addTo(controller);
-    
+ */   
 

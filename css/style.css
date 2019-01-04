@@ -2559,7 +2559,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-tap-highlight-color: transparent;
     overflow-x: hidden;
-    background-color: #ffde1d;
+    /*background-color: #ffde1d;*/
     color: #0e070e;
     font-family: "Tungsten Comp A", "Tungsten Comp B", sans-serif;
     font-weight: 400;
@@ -3393,9 +3393,6 @@ hr {
     }
 }
 
-.about {
-    background-color: #ffde1d
-}
 
 .about__intro {
     position: relative;
