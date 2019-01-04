@@ -218,25 +218,49 @@ $(document).ready(function() {
           theme: 'minimal-dark'
         });
             //scroll on hover 
-        var to;
+
+        $(".scroller-left").mouseover(function(){
+          $(".content").mCustomScrollbar("scrollTo","left",{
+            scrollInertia:5000
+          });
+        });
+
+        $(".scroller-right").mouseover(function(){
+          $(".content").mCustomScrollbar("scrollTo","right",{
+            scrollInertia:5000
+          });
+        });
+
+        $(".scroller-left").mouseout(function(){
+          $(".content").mCustomScrollbar("stop");
+        });
+
+        $(".scroller-right").mouseout(function(){
+          $(".content").mCustomScrollbar("stop");
+        });
+
+
+
+
+        /*var to;
         var scrollRight = function() {
-          $(".content").mCustomScrollbar("scrollTo","-=60");
+          $(".content").mCustomScrollbar("scrollTo","-=500");
         };
         var scrollLeft = function() {
-          $(".content").mCustomScrollbar("scrollTo","+=60");
+          $(".content").mCustomScrollbar("scrollTo","+=500");
         };
 
-            $(".scroller-right").hover(function(e) {
-                to = window.setInterval(scrollRight, 100);
-            },function(e) {
-                window.clearInterval(to);
-            })
+        $(".scroller-right").hover(function(e) {
+            to = window.setInterval(scrollRight, 1);
+        },function(e) {
+            window.clearInterval(to);
+        })
 
-            $(".scroller-left").hover(function(e) {
-              to = window.setInterval(scrollLeft, 100);
-            },function(e) {
-                window.clearInterval(to);
-            })
+        $(".scroller-left").hover(function(e) {
+          to = window.setInterval(scrollLeft, 1);
+        },function(e) {
+            window.clearInterval(to);
+        })*/
 
       });
     })(jQuery);
