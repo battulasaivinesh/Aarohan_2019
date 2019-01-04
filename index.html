@@ -100,13 +100,13 @@
                                         <figure class="fit-wrapper"><img class="lazy loaded" width="1920" height="1200" alt="La maschera e l&#39;incubo" src="img/2.jpg" style=""> </figure>
                                         <!--<h2 class="about-heading"> ABOUT US</h2>-->
                                         <div class="grid__item color-11">
-                                                <a class="link link--yaku" href="#">
+                                                <h2 class="link link--yaku" href="#">
                                                     <span>A</span><span>B</span><span>O</span><span>U</span><span>T</span>
                                                     <span> </span>
                                                     <span>
                                                         <span>U</span><span>S</span>
                                                     </span>					
-                                                </a>
+                                                </h2>
                                             </div>
                                     </div>
                                 </div>
@@ -451,10 +451,10 @@
             </div>
     
             <!-- Social Links -->
-            <div style="z-index: 5; position: fixed; left: 5%; top: 80%; height: 100px;">
-                <i class="fa fa-facebook-square" style="font-size:24px;padding-bottom: 25%;"></i></br>
-                <i class="fa fa-instagram" style="font-size:24px;padding-bottom: 25%;"></i></br>
-                <i class="fa fa-youtube-play" style="font-size:20px;padding-bottom: 25%;"></i></br>
+            <div class="social_links" >
+                <i class="fa fa-facebook-square"></i></br>
+                <i class="fa fa-instagram"></i></br>
+                <i class="fa fa-youtube-play"></i></br>
             </div>
             
 
@@ -473,8 +473,14 @@
                     document.getElementById("myNav").style.width = "0%";
                 }
             </script>
-            <a class="menu-2" data-menu="2" style="z-index: 20;font-size:30px; position: fixed; right: 0%; top: 0%;" ></a>
-           
+
+                <div class="hamburger" id="hamburger-11">
+                    <a id="menu">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </a>
+                </div>
 
             <script>
                 var menu = $('.menu-2');
@@ -484,7 +490,7 @@
                 })
                 // for menu closing
                 $(document).ready(function(){
-                            $(".menu-2").click(function(){
+                            $("#menu").click(function(){
                                 if(document.getElementById("myNav").style.width=="100%")
                                 {
                                     document.getElementById("myNav").style.width = "0%"; 
