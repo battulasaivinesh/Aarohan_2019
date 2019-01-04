@@ -44,6 +44,49 @@ body {
     margin-left: 50px;
   }
 
+/* navbar new */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+
 /* manu button */
 .menubtn {
   position: fixed;
@@ -56,6 +99,55 @@ body {
   background: transparent;
   margin: 2rem;
 } 
+
+.menu-2 {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 50px;
+  cursor: pointer;
+  transition: all 0.3s;
+  }
+  .menu-2:before, .menu-2:after {
+  content: "";
+  position: absolute;
+  transition: all 0.3s;
+  }
+
+  .menu-2 {
+  border: 4px solid #000000;
+  }
+  .menu-2:hover {
+  border-color: aqua;
+  }
+  .menu-2:before, .menu-2:after {
+  background-color: #000000;
+  height: 4px;
+  width: 30px;
+  top: 50%;
+  left: 50%;
+  margin-left: -15px;
+  }
+  .menu-2:before {
+  margin-top: -6px;
+  }
+  .menu-2:after {
+  margin-top: 4px;
+  }
+
+  .menu-2-active {
+  transform: rotate(45deg);
+  border-color: red !important;
+  background-color: red !important;
+  }
+  .menu-2-active:before, .menu-2-active:after {
+  margin-left: -15px !important;
+  margin-top: -2px !important;
+  }
+  .menu-2-active:after {
+  transform: rotate(-90deg) !important;
+  }
 
 /* container */
 #container {
@@ -120,6 +212,102 @@ body {
     font-size: 206px;
   }
 
+  .grid__item {
+    background: transparent;
+    height: 100%;
+    margin: 20px;
+    padding: 100px 0;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.link {
+	outline: none;
+	text-decoration: none;
+	position: relative;
+	font-size: 8em;
+	line-height: 1;
+	color: #9e9ba4;
+	display: inline-block;
+}
+
+/* Yaku */
+.link--yaku {
+	color: #D3D3D3;
+	font-family: 'Playfair Display';
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 10em;
+	overflow: hidden;
+	padding: 0 0 10px;
+}
+
+.link--yaku::before {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	border-width: 2px 0;
+	border-color: #282828;
+	border-style: solid;
+	left: 0;
+	-webkit-transform: translate3d(-101%,0,0);
+	transform: translate3d(-101%,0,0);
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+}
+
+.link--yaku:hover::before {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.link--yaku span {
+	display: inline-block;
+	position: relative;
+	-webkit-transform: perspective(1000px) rotate3d(0,1,0,0deg);
+	transform: perspective(1000px) rotate3d(0,1,0,0deg);
+	-webkit-transition: -webkit-transform 0.5s, color 0.5s;
+	transition: transform 0.5s, color 0.5s;
+}
+
+.link--yaku:hover span {
+	color: #1e1a1b;
+	-webkit-transform: perspective(1000px) rotate3d(0,1,0,360deg);
+	transform: perspective(1000px) rotate3d(0,1,0,360deg);
+}
+
+.link--yaku span:nth-child(4),
+.link--yaku:hover span:first-child {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+.link--yaku span:nth-child(3),
+.link--yaku:hover span:nth-child(2) {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+.link--yaku span:nth-child(2),
+.link--yaku:hover span:nth-child(3) {
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+
+.link--yaku span:first-child,
+.link--yaku:hover span:nth-child(4) {
+	-webkit-transition-delay: 0.3s;
+	transition-delay: 0.3s;
+}
+
+  
   /* mobile screen */
 
   @media screen and (max-width: 600px) {
@@ -137,6 +325,20 @@ body {
     .ui-resizable-e{
       background: url(http://i.stack.imgur.com/Xkiaa.png) no-repeat; 
     } 
+
+    /* navbar */
+
+    @media screen and (max-height: 450px) {
+      .overlay a {font-size: 20px}
+      .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+      }
+    }
+
+    /* ilustration txt */
+    .link--yaku { font-size: 4em; }
   }
 
   /* animation */

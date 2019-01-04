@@ -30,109 +30,8 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
-    
-    <style>
-        .overlay {
-          height: 100%;
-          width: 0;
-          position: fixed;
-          z-index: 10;
-          top: 0;
-          right: 0;
-          background-color: rgb(0,0,0);
-          background-color: rgba(0,0,0, 0.9);
-          overflow-x: hidden;
-          transition: 0.5s;
-        }
-        
-        .overlay-content {
-          position: relative;
-          top: 25%;
-          width: 100%;
-          text-align: center;
-          margin-top: 30px;
-        }
-        
-        .overlay a {
-          padding: 8px;
-          text-decoration: none;
-          font-size: 36px;
-          color: #818181;
-          display: block;
-          transition: 0.3s;
-        }
-        
-        .overlay a:hover, .overlay a:focus {
-          color: #f1f1f1;
-        }
-        
-        .overlay .closebtn {
-          position: absolute;
-          top: 20px;
-          right: 45px;
-          font-size: 60px;
-        }
-        
-        @media screen and (max-height: 450px) {
-          .overlay a {font-size: 20px}
-          .overlay .closebtn {
-          font-size: 40px;
-          top: 15px;
-          right: 35px;
-          }
-        }
-    </style>
-    <style>
-        .menu-2 {
-        position: relative;
-        display: inline-block;
-        width: 40px;
-        height: 40px;
-        margin: 50px;
-        cursor: pointer;
-        transition: all 0.3s;
-        }
-        .menu-2:before, .menu-2:after {
-        content: "";
-        position: absolute;
-        transition: all 0.3s;
-        }
 
-        .menu-2 {
-        border: 4px solid #000000;
-        }
-        .menu-2:hover {
-        border-color: aqua;
-        }
-        .menu-2:before, .menu-2:after {
-        background-color: #000000;
-        height: 4px;
-        width: 30px;
-        top: 50%;
-        left: 50%;
-        margin-left: -15px;
-        }
-        .menu-2:before {
-        margin-top: -6px;
-        }
-        .menu-2:after {
-        margin-top: 4px;
-        }
 
-        .menu-2-active {
-        transform: rotate(45deg);
-        border-color: red !important;
-        background-color: red !important;
-        }
-        .menu-2-active:before, .menu-2-active:after {
-        margin-left: -15px !important;
-        margin-top: -2px !important;
-        }
-        .menu-2-active:after {
-        transform: rotate(-90deg) !important;
-        }
-
-    </style>
 </head>
 
 <body>
@@ -199,7 +98,16 @@
                                 <div class="about__animation image-animation">
                                     <div class="image-animation__img" style="opacity: 0; transform: matrix(3, 0, 0, 3, 0, 0); position: absolute; top: 0px;">
                                         <figure class="fit-wrapper"><img class="lazy loaded" width="1920" height="1200" alt="La maschera e l&#39;incubo" src="img/2.jpg" style=""> </figure>
-                                        <h2 class="about-heading"> ABOUT US</h2>
+                                        <!--<h2 class="about-heading"> ABOUT US</h2>-->
+                                        <div class="grid__item color-11">
+                                                <a class="link link--yaku" href="#">
+                                                    <span>A</span><span>B</span><span>O</span><span>U</span><span>T</span>
+                                                    <span> </span>
+                                                    <span>
+                                                        <span>U</span><span>S</span>
+                                                    </span>					
+                                                </a>
+                                            </div>
                                     </div>
                                 </div>
                 <div class="about__info content-info">
@@ -293,14 +201,12 @@
                 </div>
             </div>
             <section class="section painters" style="background-color:skyblue">
-                <div class="painters__animation image-animation-reverse">
-                    <div class="image-animation__img" style="opacity: 1; position: absolute; top: 0px; transform: matrix(1, 0, 0, 1, 0, 0);">
-                            <div id="animate1" class="scroll-txt">
-                                    <h1>ABOUT US</h1>                       
+                    <div class="about__animation image-animation">
+                            <div class="image-animation__img" style="opacity: 0; transform: matrix(3, 0, 0, 3, 0, 0); position: absolute; top: 0px;">
+                                <figure class="fit-wrapper"><img class="lazy loaded" width="1920" height="1200" alt="La maschera e l&#39;incubo" src="img/2.jpg" style=""> </figure>
+                                <h2 class="about-heading">TEAM</h2>
                             </div>
-                        <figure class="fit-wrapper"><img class="lazy loaded" width="1920" height="1200"  src="img/2.jpg" style=""> </figure>
                     </div>
-                </div>
                 <div class="painters__info content-info">
                     <div class="container-fluid">
                         <div class="painters__info-image dist">
@@ -473,6 +379,12 @@
                 </div>
             </section>
             <section class="section1 part">
+                    <div class="about__animation image-animation">
+                            <div class="image-animation__img" style="opacity: 0; transform: matrix(3, 0, 0, 3, 0, 0); position: absolute; top: 0px;">
+                                <figure class="fit-wrapper"><img class="lazy loaded" width="1920" height="1200" alt="La maschera e l&#39;incubo" src="img/2.jpg" style=""> </figure>
+                                <h2 class="about-heading">TEAM</h2>
+                            </div>
+                    </div>
                 <div style="background-color:springgreen;width:100vw;height:100vh;">
                     <div style="height:auto;text-align:center;font-size:5em";>
                         <h1>The Team</h1>
@@ -480,9 +392,28 @@
                 </div>
             </section>
             <section class="section2 part">
+                    <div class="about__animation image-animation">
+                            <div class="image-animation__img" style="opacity: 0; transform: matrix(3, 0, 0, 3, 0, 0); position: absolute; top: 0px;">
+                                <figure class="fit-wrapper"><img class="lazy loaded" width="1920" height="1200" alt="La maschera e l&#39;incubo" src="img/2.jpg" style=""> </figure>
+                                <h2 class="about-heading">SPONSORS</h2>
+                            </div>
+                    </div>
                     <div style="background-color:teal;width:100vw;height:100vh;">
                         <div style="height:auto;text-align:center;font-size:5em";>
                             <h1>Previous Sponsors</h1>
+                        </div>
+                    </div>
+            </section>
+            <section class="section2 part">
+                    <div class="about__animation image-animation">
+                            <div class="image-animation__img" style="opacity: 0; transform: matrix(3, 0, 0, 3, 0, 0); position: absolute; top: 0px;">
+                                <figure class="fit-wrapper"><img class="lazy loaded" width="1920" height="1200" alt="La maschera e l&#39;incubo" src="img/2.jpg" style=""> </figure>
+                                <h2 class="about-heading">MAJOR ATTRACTIONS</h2>
+                            </div>
+                    </div>
+                    <div style="background-color:orange;width:100vw;height:100vh;">
+                        <div style="height:auto;text-align:center;font-size:5em";>
+                            <h1>Major Attractions</h1>
                         </div>
                     </div>
             </section>
