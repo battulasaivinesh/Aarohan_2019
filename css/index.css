@@ -397,6 +397,31 @@ body {
 	transition-delay: 0.3s;
 }
 
+
+/* team  */
+.painters{
+  position: relative;
+}
+
+.scroller-right {
+  position: absolute;
+  right: 20px;
+  top: 75%;
+  z-index: 55;
+  padding: 20px;
+  border: 2px solid;
+  background: orange;
+}
+
+.scroller-left {
+  position: absolute;
+  left: 20px;
+  top: 75%;
+  z-index: 55;
+  padding: 20px;
+  border: 2px solid;
+  background: orange;
+}
   
   /* mobile screen */
 
