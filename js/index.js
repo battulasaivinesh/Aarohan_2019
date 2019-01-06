@@ -5,6 +5,32 @@ $(document).ready(function(){
       $(this).toggleClass("is-active");
     });
   });
+
+                  // closing function for menu options
+            
+                  var menuopt = $('.overlay-content a');
+                  menuopt.click(function() {
+                      $('.hamburger').toggleClass('is-active');
+                  } );
+
+            // for menu closing
+                $(document).ready(function(){
+                    $("#menu").click(function(){
+                        if(document.getElementById("myNav").style.width=="100%")
+                        {
+                            document.getElementById("myNav").style.width = "0%"; 
+                        }
+                        else
+                        {
+                            document.getElementById("myNav").style.width = "100%";
+                        }
+                    });
+                    $(".overlay-content a").click(function(){
+                        document.getElementById("myNav").style.width = "0%"; 
+                    });
+                });
+
+  //
   
     $(document).ready(function(){
         $("#open").click(function(){
@@ -353,24 +379,4 @@ $(document).ready(function() {
         });
     }
 });
-
-/*scroll magic
-    var controller = new ScrollMagic.Controller();
-
-    var timeline = new TimelineMax();
-    var tween1 = TweenMax.to("#animate1", 1, {opacity:1, scale: 2.5,ease: Power1.easeOut});
-    var tween2 = TweenMax.to("#animate1", 1 , {opacity:0, scale: 0,ease: Power1.easeIn,delay:1});
-    timeline
-        .add(tween1)
-        .add(tween2);
-
-    new ScrollMagic.Scene({
-        triggerElement: "#trigger1",
-        triggerHook:'onLeave',
-        offset:'100',
-        duration:'150%',
-    })
-    .setTween(timeline) 
-    .addTo(controller);
- */   
 
