@@ -302,6 +302,13 @@ body {
     font-size: 206px;
   }
 
+  .hidden {
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    position: absolute;
+  }
+
   .grid__item {
     background: transparent;
     height: 100%;
@@ -327,62 +334,56 @@ body {
 	display: inline-block;
 }
 
-/* Urpi */
-.link--urpi {
-	font-size: 10em;
-	font-weight: 700;
+/* Kukuri */
+.link--kukuri {
 	text-transform: uppercase;
-	color: #e78383;
-	-webkit-transition: color 0s 0.5s;
-	transition: color 0s 0.5s;
+	font-weight: 900;
+	overflow: hidden;
+	line-height: 0.75;
+	color: #c5c2b8;
 }
 
-.link--urpi:hover {
-	color: transparent;
-	-webkit-transition: none;
-	transition: none;
+.link--kukuri:hover {
+	color: #c5c2b8;
 }
 
-.link--urpi::before,
-.link--urpi::after {
+.link--kukuri::after {
+	content: '';
+	position: absolute;
+	height: 16px;
+	width: 100%;
+	top: 50%;
+	margin-top: -8px;
+	right: 0;
+	background: #F9F9F9;
+	-webkit-transform: translate3d(-100%,0,0);
+	transform: translate3d(-100%,0,0);
+	-webkit-transition: -webkit-transform 0.4s;
+	transition: transform 0.4s;
+	-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+}
+
+.link--kukuri:hover::after {
+	-webkit-transform: translate3d(100%,0,0);
+	transform: translate3d(100%,0,0);
+}
+
+.link--kukuri::before {
 	content: attr(data-letters);
 	position: absolute;
-	top: 0;
-	left: 0;
-	color: #e78383;
+	z-index: 2;
 	overflow: hidden;
-	-webkit-backface-visibility: hidden;
-	-webkit-transition: color 0.5s, -webkit-transform 0.5s;
-	transition: color 0.5s, transform 0.5s;
+	color: #424242;
+	white-space: nowrap;
+	width: 0%;
+	-webkit-transition: width 0.4s 0.3s;
+	transition: width 0.4s 0.3s;
 }
 
-.link--urpi::before {
-	-webkit-clip-path: url(#cp_up); 
-	clip-path: url(../index.html#cp_up);
+.link--kukuri:hover::before {
+	width: 100%;
 }
-
-.link--urpi::after {
-	-webkit-clip-path: url(#cp_down); 
-	clip-path: url(../index.html#cp_down);
-}
-
-.link--urpi:hover::before,
-.link--urpi:hover::after {
-	color: #fff;
-	-webkit-transition: color 0.5s, -webkit-transform 0.5s;
-	transition: color 0.5s, transform 0.5s;
-}
-
-.link--urpi:hover::before {
-	-webkit-transform: translate3d(4px,1px,0);
-	transform: translate3d(4px,1px,0);
-}
-
-.link--urpi:hover::after {
-	-webkit-transform: translate3d(-4px,-1px,0);
-	transform: translate3d(-4px,-1px,0);
-}
-
 /* events */
 .painters__list {
   height: 100vh;
@@ -397,7 +398,7 @@ body {
 .scroller-right {
   position: absolute;
   right: 20px;
-  top: 75%;
+  bottom: 15%;
   z-index: 55;
   padding: 20px;
   border: 2px solid;
@@ -407,7 +408,7 @@ body {
 .scroller-left {
   position: absolute;
   left: 20px;
-  top: 75%;
+  bottom: 15%;
   z-index: 55;
   padding: 20px;
   border: 2px solid;
@@ -444,7 +445,7 @@ body {
     }
 
     /* ilustration txt */
-    .link--yaku { font-size: 4em; }
+    .link--kukuri { font-size: 3.5em; }
   }
 
   /* animation */

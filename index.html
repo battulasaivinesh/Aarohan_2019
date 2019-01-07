@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    
+
     <title>Title</title>
     
     <link rel="stylesheet" type="text/css" href="css/krt7jsv.css">
@@ -13,7 +13,17 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    
+    <style> /* Firefox seems to have issues loading the clip path from inside the CSS */
+		.link--urpi::before {
+			-webkit-clip-path: url(#cp_up); 
+			clip-path: url(#cp_up);
+		}
+
+		.link--urpi::after {
+			-webkit-clip-path: url(#cp_down); 
+			clip-path: url(#cp_down);
+		}
+	</style>
     <script async="" src="js/js"></script>
 
      <!-- landing -->
@@ -118,24 +128,13 @@
                                     </div>
                                 </section>
 
-                                	<!-- clipping mask for style "Urpi" -->
-                <svg class="hidden" viewBox="0 0 310 160">
-                    <defs>
-                        <clippath id="cp_up">
-                            <polygon id="cp_poly_up" points="0,0 310,0 310,160" />
-                        </clippath>
-                        <clippath id="cp_down">
-                            <polygon id="cp_poly_down" points="0,0 0,160 310,160" />
-                        </clippath>
-                    </defs>
-                </svg>
     <!-- about us -->
                                 <div class="aboutus about__animation image-animation">
                                     <div class="image-animation__img" style="opacity: 0; transform: matrix(3, 0, 0, 3, 0, 0); position: absolute; top: 0px;">
                                         <figure class="fit-wrapper"><img class="lazy loaded" width="1920" height="1200" alt="La maschera e l&#39;incubo" src="img/2.jpg" style=""> </figure>
                                         <!--<h2 class="about-heading"> ABOUT US</h2>-->
-                                        <div class="grid__item color-5">
-                                            <a class="link link--urpi" href="#" data-letters="Urpi">Urpi</a>
+                                        <div class="grid__item color-1">
+                                            <a class="link link--kukuri" href="#" data-letters="About Us">About Us</a>
                                         </div>
                                     </div>
                                 </div>
@@ -199,27 +198,27 @@
                                         <li>
                                             <div class="painters__list-tooltip landscape" style="">
                                                 <figure class="fit-wrapper"><img class="lazy loaded" width="800" height="600" alt="" src="https://picsum.photos/200/300/?random" style=""> </figure>
-                                            </div> <a href="https://www.pittoridicinema.it/#"> Event1 </a> </li>
+                                            </div> <a href="https://www.pittoridicinema.it/#"> Event2 </a> </li>
                                         <li>
                                             <div class="painters__list-tooltip portrait" style="">
                                                 <figure class="fit-wrapper"><img class="lazy loaded" width="600" height="800" alt="" src="https://picsum.photos/200/300/?random" style=""> </figure>
-                                            </div> <a href="https://www.pittoridicinema.it/#"> Event1 </a> </li>
+                                            </div> <a href="https://www.pittoridicinema.it/#"> Event3 </a> </li>
                                         <li>
                                             <div class="painters__list-tooltip landscape" style="">
                                                 <figure class="fit-wrapper"><img class="lazy loaded" width="800" height="600" alt="" src="https://picsum.photos/200/300/?random" style=""> </figure>
-                                            </div> <a href="https://www.pittoridicinema.it/#"> Event1 </a> </li>
+                                            </div> <a href="https://www.pittoridicinema.it/#"> Event4 </a> </li>
                                         <li>
                                             <div class="painters__list-tooltip landscape" style="">
                                                 <figure class="fit-wrapper"><img class="lazy loaded" width="800" height="600" alt="" src="https://picsum.photos/200/300/?random" style=""> </figure>
-                                            </div> <a href="https://www.pittoridicinema.it/#"> Event1 </a> </li>
+                                            </div> <a href="https://www.pittoridicinema.it/#"> Event5 </a> </li>
                                         <li>
                                             <div class="painters__list-tooltip portrait" style="">
                                                 <figure class="fit-wrapper"><img class="lazy loaded" width="600" height="800" alt="" src="https://picsum.photos/200/300/?random" style=""> </figure>
-                                            </div> <a href="https://www.pittoridicinema.it/#"> Event1 </a> </li>
+                                            </div> <a href="https://www.pittoridicinema.it/#"> Event6 </a> </li>
                                         <li>
                                             <div class="painters__list-tooltip portrait" style="">
                                                 <figure class="fit-wrapper"><img class="lazy loaded" width="600" height="800" alt="" src="https://picsum.photos/200/300/?random" style=""> </figure>
-                                            </div> <a href="https://www.pittoridicinema.it/#"> Event1 </a> </li>
+                                            </div> <a href="https://www.pittoridicinema.it/#"> Event7 </a> </li>
                                     </ul>
                                 </div>
                             </div>
