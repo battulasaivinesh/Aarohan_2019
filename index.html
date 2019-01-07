@@ -9,21 +9,13 @@
     <title>Title</title>
     
     <link rel="stylesheet" type="text/css" href="css/krt7jsv.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css">
     
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <style> /* Firefox seems to have issues loading the clip path from inside the CSS */
-		.link--urpi::before {
-			-webkit-clip-path: url(#cp_up); 
-			clip-path: url(#cp_up);
-		}
 
-		.link--urpi::after {
-			-webkit-clip-path: url(#cp_down); 
-			clip-path: url(#cp_down);
-		}
-	</style>
     <script async="" src="js/js"></script>
 
      <!-- landing -->
@@ -59,7 +51,7 @@
     <!-- landing drag-->
 
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"/>
- 
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
@@ -191,8 +183,8 @@
                 </div>
                 <div class="events_content">
                     <!-- event1-->
-                    <div class="event_box">
-                        <div class="events_illst">
+                    <div class="row event_box">
+                        <div class="col-lg-6 col-sm-12 events_illst">
                             <div class="image">
                                 <img src="http://www.andypatrickdesign.com/images/londonborn-device.png" alt="">
                             </div>
@@ -200,18 +192,18 @@
                                 <div class="fluidbig"></div>
                             </div>
                         </div>
-                        <div class="events_txt text-animate">
+                        <div class="col-lg-6 col-sm-12 text-animate">
                             <h1>Techelon</h1>
                             <p>it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                         </div>
                     </div>
                     <!-- event2-->
-                    <div class="event_box">
-                            <div class="events_txt text-animate">
+                    <div class="row event_box">
+                            <div class="col-lg-6 order-lg-1 col-sm-12 order-sm-2 events_txt text-animate">
                                     <h1>Eureka</h1>
                                     <p>it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                                 </div>
-                            <div class="events_illst">
+                            <div class="col-lg-6 order-lg-2 col-sm-12 order-first events_illst">
                                 <div class="image">
                                     <img src="http://www.andypatrickdesign.com/images/londonborn-device.png" alt="">
                                 </div>
@@ -221,8 +213,8 @@
                             </div>
                         </div>
                      <!-- event3-->
-                    <div class="event_box">
-                            <div class="events_illst">
+                    <div class="row event_box">
+                            <div class="col-lg-6 col-sm-12 events_illst">
                                 <div class="image">
                                     <img src="http://www.andypatrickdesign.com/images/londonborn-device.png" alt="">
                                 </div>
@@ -230,18 +222,18 @@
                                     <div class="fluidbig"></div>
                                 </div>
                             </div>
-                            <div class="events_txt text-animate">
+                            <div class="col-lg-6 col-sm-12 events_txt text-animate">
                                 <h1>Strategist</h1>
                                 <p>it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                             </div>
                         </div>
                         <!-- event4-->
-                        <div class="event_box">
-                                <div class="events_txt text-animate">
+                        <div class="row event_box">
+                                <div class="col-lg-6 col-sm-12 events_txt text-animate">
                                         <h1>Battle of bytes</h1>
                                         <p>it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                                     </div>
-                                <div class="events_illst">
+                                <div class="col-lg-6 col-sm-12 events_illst">
                                     <div class="image">
                                         <img src="http://www.andypatrickdesign.com/images/londonborn-device.png" alt="">
                                     </div>
@@ -251,8 +243,8 @@
                                 </div>
                             </div>
                     <!-- event5-->
-                    <div class="event_box">
-                            <div class="events_illst">
+                    <div class="row event_box">
+                            <div class="col-lg-6 col-sm-12 events_illst">
                                 <div class="image">
                                     <img src="http://www.andypatrickdesign.com/images/londonborn-device.png" alt="">
                                 </div>
@@ -260,18 +252,18 @@
                                     <div class="fluidbig"></div>
                                 </div>
                             </div>
-                            <div class="events_txt text-animate">
+                            <div class="col-lg-6 col-sm-12 events_txt text-animate">
                                 <h1>Console</h1>
                                 <p>it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                             </div>
                         </div>
                         <!-- event6-->
-                        <div class="event_box">
-                                <div class="events_txt text-animate">
+                        <div class="row event_box">
+                                <div class="col-lg-6 col-sm-12 events_txt text-animate">
                                         <h1>Armageddon</h1>
                                         <p>it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                                     </div>
-                                <div class="events_illst">
+                                <div class="col-lg-6 col-sm-12 events_illst">
                                     <div class="image">
                                         <img src="http://www.andypatrickdesign.com/images/londonborn-device.png" alt="">
                                     </div>
@@ -281,8 +273,8 @@
                                 </div>
                             </div>
                              <!-- event6-->
-                    <div class="event_box">
-                            <div class="events_illst">
+                    <div class="row event_box">
+                            <div class="col-lg-6 col-sm-12 events_illst">
                                 <div class="image">
                                     <img src="http://www.andypatrickdesign.com/images/londonborn-device.png" alt="">
                                 </div>
@@ -290,18 +282,18 @@
                                     <div class="fluidbig"></div>
                                 </div>
                             </div>
-                            <div class="events_txt text-animate">
+                            <div class="col-lg-6 col-sm-12 events_txt text-animate">
                                 <h1>Exquizzit</h1>
                                 <p>it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                             </div>
                         </div>
                         <!-- event7-->
-                        <div class="event_box">
-                                <div class="events_txt text-animate">
+                        <div class="row event_box">
+                                <div class="col-lg-6 col-sm-12 events_txt text-animate">
                                         <h1>Apostrophe</h1>
                                         <p>it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                                     </div>
-                                <div class="events_illst">
+                                <div class="col-lg-6 col-sm-12 events_illst">
                                     <div class="image">
                                         <img src="http://www.andypatrickdesign.com/images/londonborn-device.png" alt="">
                                     </div>
@@ -327,11 +319,83 @@
                         </div>
                     </div>
             </div>
-            <div style="background-color:orange;width:100vw;height:100vh;">
-                <div style="height:auto;text-align:center;font-size:5em";>
-                    <h1>Major Attractions</h1>
-                </div>
-            </div>
+                    <div class="events_content">
+                        <!-- event1-->
+                        <div class="event_box">
+                            <div class="col-lg-6 col-sm-12 events_illst">
+                                <div class="image">
+                                    <img src="http://www.andypatrickdesign.com/images/londonborn-device.png" alt="">
+                                </div>
+                                <div class="homeworksplat">
+                                    <div class="fluidbig"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12 events_txt text-animate">
+                                <h1>Techelon</h1>
+                                <p>it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            </div>
+                        </div>
+                        <!-- event2-->
+                        <div class="event_box">
+                                <div class="col-lg-6 col-sm-12 order-sm-2 events_txt text-animate">
+                                        <h1>Eureka</h1>
+                                        <p>it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                    </div>
+                                <div class="col-lg-6 col-sm-12 events_illst">
+                                    <div class="image">
+                                        <img src="http://www.andypatrickdesign.com/images/londonborn-device.png" alt="">
+                                    </div>
+                                    <!-- <div class="homeworksplat">
+                                        <div  style="left:50px"></div>
+                                    </div> -->
+                                </div>
+                            </div>
+                         <!-- event3-->
+                        <div class="event_box">
+                                <div class="col-lg-6 col-sm-12 events_illst">
+                                    <div class="image">
+                                        <img src="http://www.andypatrickdesign.com/images/londonborn-device.png" alt="">
+                                    </div>
+                                    <div class="homeworksplat">
+                                        <div class="fluidbig"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-12 events_txt text-animate">
+                                    <h1>Strategist</h1>
+                                    <p>it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                </div>
+                            </div>
+                            <!-- event4-->
+                            <div class="event_box">
+                                    <div class="col-lg-6 col-sm-12 events_txt text-animate">
+                                            <h1>Battle of bytes</h1>
+                                            <p>it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                        </div>
+                                    <div class="col-lg-6 col-sm-12 events_illst">
+                                        <div class="image">
+                                            <img src="http://www.andypatrickdesign.com/images/londonborn-device.png" alt="">
+                                        </div>
+                                        <div class="homeworksplat">
+                                            <div class="fluidbig" style="left:50px"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                        <!-- event5-->
+                        <div class="event_box">
+                                <div class="col-lg-6 col-sm-12 events_illst">
+                                    <div class="image">
+                                        <img src="http://www.andypatrickdesign.com/images/londonborn-device.png" alt="">
+                                    </div>
+                                    <div class="homeworksplat">
+                                        <div class="fluidbig"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-12 events_txt text-animate">
+                                    <h1>Console</h1>
+                                    <p>it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                </div>
+                            </div>
+                    </div>
         </section>
 
 
