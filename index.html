@@ -62,7 +62,7 @@
  
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
 </head>
 
@@ -129,13 +129,15 @@
                                 </section>
 
     <!-- about us -->
-                                <div class="aboutus about__animation image-animation">
-                                    <div class="image-animation__img" style="opacity: 0; transform: matrix(3, 0, 0, 3, 0, 0); position: absolute; top: 0px;">
-                                        <figure class="fit-wrapper"><img class="lazy loaded" width="1920" height="1200" alt="La maschera e l&#39;incubo" src="img/2.jpg" style=""> </figure>
-                                        <!--<h2 class="about-heading"> ABOUT US</h2>-->
-                                        <div class="grid__item color-1">
-                                            <a class="link link--kukuri" href="#" data-letters="About Us">About Us</a>
+                                <div class="aboutcontainer">
+                                    <div id="trigger1" class="aboutus about__animation image-animation">
+                                        <div class="image-animation__img" style="opacity: 0; transform: matrix(3, 0, 0, 3, 0, 0); position: absolute; top: 0px;">
+                                            <figure class="fit-wrapper"><img class="lazy loaded" width="1920" height="1200" alt="La maschera e l&#39;incubo" src="img/2.jpg" style=""> </figure>
+                                            <!--<h2 class="about-heading"> ABOUT US</h2>-->
                                         </div>
+                                    </div>
+                                    <div class="grid__item ">
+                                        <h1 id="animate1" class="ml13" >About Us</h1>
                                     </div>
                                 </div>
                 <div class="about__info content-info">
@@ -184,45 +186,17 @@
                             <h2 class="about-heading">Events</h2>
                         </div>
                 </div>
-                <div class="painters__list">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-sm-8 col-sm-offset-2">
-                            
-                                <div class="painters__list-items">
-                                    <ul class="font-serif">
-                                        <li>
-                                            <div class="painters__list-tooltip portrait" style="">
-                                                <figure class="fit-wrapper"><img class="lazy loaded" width="600" height="800" alt="" src="https://picsum.photos/200/300/?random" style=""> </figure>
-                                            </div> <a href="https://www.pittoridicinema.it/#">Event1 </a> </li>
-                                        <li>
-                                            <div class="painters__list-tooltip landscape" style="">
-                                                <figure class="fit-wrapper"><img class="lazy loaded" width="800" height="600" alt="" src="https://picsum.photos/200/300/?random" style=""> </figure>
-                                            </div> <a href="https://www.pittoridicinema.it/#"> Event2 </a> </li>
-                                        <li>
-                                            <div class="painters__list-tooltip portrait" style="">
-                                                <figure class="fit-wrapper"><img class="lazy loaded" width="600" height="800" alt="" src="https://picsum.photos/200/300/?random" style=""> </figure>
-                                            </div> <a href="https://www.pittoridicinema.it/#"> Event3 </a> </li>
-                                        <li>
-                                            <div class="painters__list-tooltip landscape" style="">
-                                                <figure class="fit-wrapper"><img class="lazy loaded" width="800" height="600" alt="" src="https://picsum.photos/200/300/?random" style=""> </figure>
-                                            </div> <a href="https://www.pittoridicinema.it/#"> Event4 </a> </li>
-                                        <li>
-                                            <div class="painters__list-tooltip landscape" style="">
-                                                <figure class="fit-wrapper"><img class="lazy loaded" width="800" height="600" alt="" src="https://picsum.photos/200/300/?random" style=""> </figure>
-                                            </div> <a href="https://www.pittoridicinema.it/#"> Event5 </a> </li>
-                                        <li>
-                                            <div class="painters__list-tooltip portrait" style="">
-                                                <figure class="fit-wrapper"><img class="lazy loaded" width="600" height="800" alt="" src="https://picsum.photos/200/300/?random" style=""> </figure>
-                                            </div> <a href="https://www.pittoridicinema.it/#"> Event6 </a> </li>
-                                        <li>
-                                            <div class="painters__list-tooltip portrait" style="">
-                                                <figure class="fit-wrapper"><img class="lazy loaded" width="600" height="800" alt="" src="https://picsum.photos/200/300/?random" style=""> </figure>
-                                            </div> <a href="https://www.pittoridicinema.it/#"> Event7 </a> </li>
-                                    </ul>
-                                </div>
-                            </div>
+                <div class="events_content">
+                    <div class="events_illst">
+                        <div class="image">
+                            <img src="http://www.andypatrickdesign.com/images/londonborn-device.png" alt="">
                         </div>
+                        <div class="homeworksplat">
+                            <div class="fluidbig"></div>
+                        </div>
+                    </div>
+                    <div class="events_txt">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                     </div>
                 </div>
         </section>
@@ -397,94 +371,64 @@
                             <div class="projectMainSliderMobi owl-carousel">
                                 <div class="projectMainSliderMobi__project-1 projectMainSliderMobi__itemMobi">
                                     <a href="/en/project/izbalavka-installation/"></a>
-                                    <img src="img%D0%A10118/Photo%204%202.jpeg" alt="&quot;Izbalavka&quot; Installation">
+                                    <img src="https://picsum.photos/200/300/?random" alt="&quot;Izbalavka&quot; Installation">
                                     <p>&quot;Izbalavka&quot; Installation</p>
                                 </div>
                                 <div class="projectMainSliderMobi__project-2 projectMainSliderMobi__itemMobi">
                                     <a href="/en/project/shelldom/"></a>
-                                    <img src="img/House%202%20Viz%203.jpeg" alt="Shelldom">
+                                    <img src="https://picsum.photos/200/300/?random" alt="Shelldom">
                                     <p>Shelldom</p>
                                 </div>
                                 <div class="projectMainSliderMobi__project-3 projectMainSliderMobi__itemMobi">
                                     <a href="/en/project/china-news-restaurant-at-maryino/"></a>
-                                    <img src="img/4P3A1988.jpeg" alt="&quot;China News&quot; Restaurant at Maryino">
+                                    <img src="https://picsum.photos/200/300/?random" alt="&quot;China News&quot; Restaurant at Maryino">
                                     <p>&quot;China News&quot; Restaurant at Maryino</p>
                                 </div>
                                 <div class="projectMainSliderMobi__project-4 projectMainSliderMobi__itemMobi">
                                     <a href="/en/project/shipment-container-coffee-shop/"></a>
-                                    <img src="img/Conteiner%206.jpeg" alt="Shipment Container Coffee Shop">
+                                    <img src="https://picsum.photos/200/300/?random" alt="Shipment Container Coffee Shop">
                                     <p>Shipment Container Coffee Shop</p>
                                 </div>
                                 <div class="projectMainSliderMobi__project-5 projectMainSliderMobi__itemMobi">
                                     <a href="/en/project/coworking-space-concept/"></a>
-                                    <img src="img/8.jpeg" alt="Coworking Space Concept">
+                                    <img src="https://picsum.photos/200/300/?random" alt="Coworking Space Concept">
                                     <p>Coworking Space Concept</p>
                                 </div>
                                 <div class="projectMainSliderMobi__project-6 projectMainSliderMobi__itemMobi">
                                     <a href="/en/project/topcon-office-at-novospassky-dvor/"></a>
-                                    <img src="img/IMG_2654.jpeg" alt="&quot;Topcon&quot; Office at &quot;Novospassky Dvor&quot;">
+                                    <img src="https://picsum.photos/200/300/?random" alt="&quot;Topcon&quot; Office at &quot;Novospassky Dvor&quot;">
                                     <p>&quot;Topcon&quot; Office at &quot;Novospassky Dvor&quot;</p>
                                 </div>
                                 <div class="projectMainSliderMobi__project-7 projectMainSliderMobi__itemMobi">
                                     <a href="/en/project/solvay-office-at-alkon-building/"></a>
-                                    <img src="img/IMG_5516-HDR.jpeg" alt="&quot;SOLVAY&quot; Office at &quot;Alkon&quot; Building">
+                                    <img src="https://picsum.photos/200/300/?random" alt="&quot;SOLVAY&quot; Office at &quot;Alkon&quot; Building">
                                     <p>&quot;SOLVAY&quot; Office at &quot;Alkon&quot; Building</p>
                                 </div>
                                 <div class="projectMainSliderMobi__project-8 projectMainSliderMobi__itemMobi">
                                     <a href="/en/project/fagerhult-office-at-omega-plaza-building/"></a>
-                                    <img src="img/IMG_7651-HDR.jpeg" alt="&quot;Fagerhult&quot; Office at &quot;Omega Plaza&quot; Building">
+                                    <img src="https://picsum.photos/200/300/?random" alt="&quot;Fagerhult&quot; Office at &quot;Omega Plaza&quot; Building">
                                     <p>&quot;Fagerhult&quot; Office at &quot;Omega Plaza&quot; Building</p>
                                 </div>
                                 <div class="projectMainSliderMobi__project-9 projectMainSliderMobi__itemMobi">
                                     <a href="/en/project/tuturu-office-at-newton-plaza-building/"></a>
-                                    <img src="img/IMG_9726-HDR.jpeg" alt="&quot;Tutu.ru&quot; Office at &quot;Newton Plaza&quot; Building">
+                                    <img src="https://picsum.photos/200/300/?random" alt="&quot;Tutu.ru&quot; Office at &quot;Newton Plaza&quot; Building">
                                     <p>&quot;Tutu.ru&quot; Office at &quot;Newton Plaza&quot; Building</p>
                                 </div>
                                 <div class="projectMainSliderMobi__project-10 projectMainSliderMobi__itemMobi">
                                     <a href="/en/project/deltacredit-office-at-arma-building/"></a>
-                                    <img src="img/IMG_9784-HDR.jpeg" alt="&quot;DeltaCredit&quot; Office at &quot;ARMA&quot; Building">
+                                    <img src="https://picsum.photos/200/300/?random" alt="&quot;DeltaCredit&quot; Office at &quot;ARMA&quot; Building">
                                     <p>&quot;DeltaCredit&quot; Office at &quot;ARMA&quot; Building</p>
                                 </div>
                                 <div class="projectMainSliderMobi__project-11 projectMainSliderMobi__itemMobi">
                                     <a href="/en/project/calvin-klein-retail-store-at-pulkovo/"></a>
-                                    <img src="img/CK%20(6).jpeg" alt="&quot;Calvin Klein&quot; Retail Store at Pulkovo">
+                                    <img src="https://picsum.photos/200/300/?random" alt="&quot;Calvin Klein&quot; Retail Store at Pulkovo">
                                     <p>&quot;Calvin Klein&quot; Retail Store at Pulkovo</p>
                                 </div>
                                 <div class="projectMainSliderMobi__project-12 projectMainSliderMobi__itemMobi">
                                     <a href="/en/project/tommy-hilfiger-retail-store-at-pulkovo/"></a>
-                                    <img src="img/12.jpeg" alt="&quot;Tommy Hilfiger&quot; Retail Store at Pulkovo">
+                                    <img src="https://picsum.photos/200/300/?random" alt="&quot;Tommy Hilfiger&quot; Retail Store at Pulkovo">
                                     <p>&quot;Tommy Hilfiger&quot; Retail Store at Pulkovo</p>
-                                </div>
-                                <div class="projectMainSliderMobi__project-13 projectMainSliderMobi__itemMobi">
-                                    <a href="/en/project/csl-behring-office-at-skylight-building/"></a>
-                                    <img src="img/CSL_Reception%202.jpeg" alt="&quot;CSL Behring&quot; Office at &quot;SkyLight&quot; Building">
-                                    <p>&quot;CSL Behring&quot; Office at &quot;SkyLight&quot; Building</p>
-                                </div>
-                                <div class="projectMainSliderMobi__project-14 projectMainSliderMobi__itemMobi">
-                                    <a href="/en/project/cisco-almaty-office/"></a>
-                                    <img src="img/1(2).jpeg" alt="&quot;Cisco&quot; Almaty Office">
-                                    <p>&quot;Cisco&quot; Almaty Office</p>
-                                </div>
-                                <div class="projectMainSliderMobi__project-15 projectMainSliderMobi__itemMobi">
-                                    <a href="/en/project/avito-moscow-office-2/"></a>
-                                    <img src="img/Avito%20(23).jpeg" alt="&quot;Avito&quot; Moscow Office">
-                                    <p>&quot;Avito&quot; Moscow Office</p>
-                                </div>
-                                <div class="projectMainSliderMobi__project-16 projectMainSliderMobi__itemMobi">
-                                    <a href="/en/project/office-of-an-undisclosed-large-western-bank-in-moscow/"></a>
-                                    <img src="img/110_2071.jpeg" alt="Office of an Undisclosed Large Western Bank in Moscow">
-                                    <p>Office of an Undisclosed Large Western Bank in Moscow</p>
-                                </div>
-                                <div class="projectMainSliderMobi__project-17 projectMainSliderMobi__itemMobi">
-                                    <a href="/en/project/china-news-restaurant-at-profsoyuznaya/"></a>
-                                    <img src="img/H68A1885%20copy.jpeg" alt="&quot;China News&quot; Restaurant at Profsoyuznaya">
-                                    <p>&quot;China News&quot; Restaurant at Profsoyuznaya</p>
-                                </div>
-                                <div class="projectMainSliderMobi__project-18 projectMainSliderMobi__itemMobi">
-                                    <a href="/en/project/avito-office-at-white-gardens-building/"></a>
-                                    <img src="img/Avito__WhiteGardens_2014__0789.jpeg" alt="&quot;Avito&quot; Office at &quot;White Gardens&quot; Building">
-                                    <p>&quot;Avito&quot; Office at &quot;White Gardens&quot; Building</p>
-                                </div>
+                                </div>                           
                             </div>
                             <div class="projectMainSliderMobi__bgBlock"></div>
                         </div>
@@ -578,7 +522,8 @@
     <script type="text/javascript" src="js/app.js" async="async"></script>
     <script src="js/main.js"></script>
     <script src="js/index.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+    <script src="js/buble.js"></script>
 </body>
 
 </html>

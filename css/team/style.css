@@ -453,7 +453,6 @@ header.white .header__logo {
 .projectMainSliderMobi {
   display: none;
   overflow-y: hidden;
-  position: fixed;
   width: 288px; }
   .projectMainSliderMobi-wrap {
     position: relative;

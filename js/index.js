@@ -6,6 +6,37 @@ $(document).ready(function() {
   });
 });
 
+//txt animation
+function callback () {
+  $('.ml13').each(function(){
+    $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+  });
+
+  anime.timeline({loop: false})
+    .add({
+      targets: '.ml13 .letter',
+      translateY: [100,0],
+      translateZ: 0,
+      opacity: [0,1],
+      easing: "easeOutExpo",
+      duration: 1400,
+      delay: function(el, i) {
+        return 300 + 30 * i;
+      }
+    });
+    console.log("callback");
+}
+
+var controller = new ScrollMagic.Controller();
+new ScrollMagic.Scene({
+    triggerElement: "#trigger1",
+    triggerHook:'onLeave',
+    offset:'100',
+    duration:'150%',
+})
+.addTo(controller)
+.on("end", callback);;
+
 // closing function for menu options
 
 var menuopt = $(".overlay-content a");
