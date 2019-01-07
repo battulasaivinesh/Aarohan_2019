@@ -359,8 +359,9 @@ body {
 }
 
 /* events */
-.events_content {
-  height: 100vh;
+
+.event_box {
+  padding: 5% 20%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -369,6 +370,7 @@ body {
 .events_illst {
   width: 50%;
   padding: 2rem 0;
+  padding-left: 10%;
   position: relative;
 }
 
@@ -380,21 +382,28 @@ body {
 
 .events_illst .image img {
   height: auto;
-  width: 80%;
+  width: 400px;
 }
 
 .events_txt {
-  width: 50%;
-  padding-top: 10rem;
+  width: 45%;
+  padding-top: 20rem;
   padding: 2rem;
+  padding-right: 5%;
+}
+
+.events_txt h1 {
+  font-size: 3rem;
+  padding-bottom: 1.5rem;
 }
 
 .fluidbig {
   z-index: 0;
   position: absolute;
-  top: 0;
-  width: 500px;
-  height: 500px;
+  top: -50px;
+  left: -50px;
+  width: 350px;
+  height: 350px;
   background: #00e6ea;
   margin: 0 auto 0 0;
   border-radius: 50%;

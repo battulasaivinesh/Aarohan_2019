@@ -334,7 +334,7 @@ new ScrollMagic.Scene({
 new ScrollMagic.Scene({
   triggerElement: "#trigger4",
   triggerHook: "onEnter",
-  offset: "300",
+  //offset: "300",
   duration: "100%"
 })
   //   .setPin("#about-wrapper")
@@ -361,7 +361,7 @@ new ScrollMagic.Scene({
 new ScrollMagic.Scene({
   triggerElement: "#trigger5",
   triggerHook: "onEnter",
-  offset: "300",
+  //offset: "300",
   duration: "100%"
 })
   //   .setPin("#about-wrapper")
@@ -388,7 +388,7 @@ new ScrollMagic.Scene({
 new ScrollMagic.Scene({
   triggerElement: "#trigger6",
   triggerHook: "onEnter",
-  offset: "300",
+  //offset: "300",
   duration: "100%"
 })
   //   .setPin("#about-wrapper")
@@ -412,30 +412,7 @@ new ScrollMagic.Scene({
 
 
 
-  
-new ScrollMagic.Scene({
-  triggerElement: "#trigger7",
-  triggerHook: "onLeave",
-  offset: "300",
-  duration: "110%"
-})
-  //   .setPin("#about-wrapper")
-  .addIndicators({ name: "random" })
-  .addTo(controller)
-  .on("start end", function(e) {
-    if (
-      e.type == "end" &&
-      e.target.controller().info("scrollDirection") == "FORWARD"
-    ) {
-      callback7();
-    }
-    if (
-      e.type == "end" &&
-      e.target.controller().info("scrollDirection") == "REVERSE"
-    ) {
-      reverse_callback7();
-    }
-  });
+
 
 
 
