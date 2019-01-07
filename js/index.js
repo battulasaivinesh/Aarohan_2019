@@ -7,35 +7,83 @@ $(document).ready(function() {
 });
 
 //txt animation
-function callback () {
-  $('.ml13').each(function(){
-    $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
-  });
+$(".ml13").each(function() {
+  $(this).html(
+    $(this)
+      .text()
+      .replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>")
+  );
+});
+function callback() {
+  setTimeout(() => {
+    document.getElementById("about-wrapper").style.opacity = 1;
+  }, 300);
 
-  anime.timeline({loop: false})
-    .add({
-      targets: '.ml13 .letter',
-      translateY: [100,0],
-      translateZ: 0,
-      opacity: [0,1],
-      easing: "easeOutExpo",
-      duration: 1400,
-      delay: function(el, i) {
-        return 300 + 30 * i;
-      }
-    });
-    console.log("callback");
+  anime.timeline({ loop: false }).add({
+    targets: ".ml13 .letter",
+    translateY: [100, 0],
+    translateZ: 0,
+    opacity: [0, 1],
+    easing: "easeOutExpo",
+    duration: 1400,
+    delay: function(el, i) {
+      return 30 * i;
+    }
+  });
+  console.log("callback");
+}
+
+function reverse_callback() {
+  //   $(".ml13").each(function() {
+  //     $(this).html(
+  //       $(this)
+  //         .text()
+  //         .replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>")
+  //     );
+  //   });
+
+  setTimeout(() => {
+    document.getElementById("about-wrapper").style.opacity = 1;
+  }, 100);
+
+  anime.timeline({ loop: false }).add({
+    targets: ".ml13 .letter",
+    translateY: [0, -100],
+    opacity: [1, 0],
+    easing: "easeInExpo",
+    duration: 1200,
+    delay: function(el, i) {
+      return 30 * i;
+    }
+  });
+  console.log("callback");
 }
 
 var controller = new ScrollMagic.Controller();
 new ScrollMagic.Scene({
-    triggerElement: "#trigger1",
-    triggerHook:'onLeave',
-    offset:'100',
-    duration:'150%',
+  triggerElement: "#trigger1",
+  triggerHook: "onLeave",
+  offset: "300",
+  duration: "110%"
 })
-.addTo(controller)
-.on("end", callback);;
+  //   .setPin("#about-wrapper")
+  .addIndicators({ name: "random" })
+  .addTo(controller)
+  .on("start end", function(e) {
+    if (
+      e.type == "end" &&
+      e.target.controller().info("scrollDirection") == "FORWARD"
+    ) {
+      callback();
+    }
+    if (
+      e.type == "end" &&
+      e.target.controller().info("scrollDirection") == "REVERSE"
+    ) {
+      reverse_callback();
+    }
+  });
+//   .on("end", callback);
 
 // closing function for menu options
 
