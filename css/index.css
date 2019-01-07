@@ -404,32 +404,6 @@ body {
   padding-bottom: 1.5rem;
 }
 
-.fluidbig {
-  z-index: 0;
-  position: absolute;
-  top: -50px;
-  left: -50px;
-  width: 350px;
-  height: 350px;
-  background: #00e6ea;
-  margin: 0 auto 0 0;
-  border-radius: 50%;
-  animation: rotate 30s infinite;
-}
-
-.fluidbigRight {
-  z-index: 0;
-  position: absolute;
-  top: -50px;
-  left: +50px;
-  width: 350px;
-  height: 350px;
-  background: #00e6ea;
-  margin: 0 auto 0 0;
-  border-radius: 50%;
-  animation: rotate 30s infinite;
-}
-
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
@@ -472,6 +446,19 @@ body {
   background: orange;
 }
 
+.fluidbig {
+  z-index: 0;
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 350px;
+  height: 350px;
+  background: #00e6ea;
+  margin: 0 auto 0 0;
+  border-radius: 50%;
+  animation: rotate 30s infinite;
+}
+
 /* mobile screen */
 
 @media screen and (max-width: 600px) {
@@ -507,6 +494,23 @@ body {
       right: 35px;
     }
 
+    .fluidbig {
+      z-index: 0;
+      position: absolute;
+      top: -50px;
+      left: -25px;
+      width: 80vw;
+      height: 80vw;
+      background: #00e6ea;
+      margin: 0 auto 0 0;
+      border-radius: 50%;
+      animation: rotate 30s infinite;
+    }
+
+    .event_box {
+      margin-top: 200px;
+    }
+
     .mobile-height {
       height: 50vh;
     }
@@ -516,6 +520,23 @@ body {
     .events_illst .image img {
       height: auto;
       width: 28vh;
+    }
+
+    .event_box {
+      margin-top: 200px;
+    }
+
+    .fluidbig {
+      z-index: 0;
+      position: absolute;
+      top: -50px;
+      left: -50px;
+      width: 350px;
+      height: 350px;
+      background: #00e6ea;
+      margin: 0 auto 0 0;
+      border-radius: 50%;
+      animation: rotate 30s infinite;
     }
 
     .overlay a {
