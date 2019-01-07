@@ -14,6 +14,7 @@ $(".ml13").each(function() {
       .replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>")
   );
 });
+
 function callback() {
   setTimeout(() => {
     document.getElementById("about-wrapper").style.opacity = 1;
@@ -42,8 +43,10 @@ function reverse_callback() {
   //     );
   //   });
 
+
+  //wrapper 2
   setTimeout(() => {
-    document.getElementById("about-wrapper").style.opacity = 1;
+    document.getElementById("about-wrapper2").style.opacity = 1;
   }, 100);
 
   anime.timeline({ loop: false }).add({
@@ -58,6 +61,194 @@ function reverse_callback() {
   });
   console.log("callback");
 }
+
+function callback2() {
+  setTimeout(() => {
+    document.getElementById("about-wrapper2").style.opacity = 1;
+  }, 300);
+
+  anime.timeline({ loop: false }).add({
+    targets: ".ml13 .letter",
+    translateY: [100, 0],
+    translateZ: 0,
+    opacity: [0, 1],
+    easing: "easeOutExpo",
+    duration: 1400,
+    delay: function(el, i) {
+      return 30 * i;
+    }
+  });
+  console.log("callback");
+}
+
+function reverse_callback2() {
+  //   $(".ml13").each(function() {
+  //     $(this).html(
+  //       $(this)
+  //         .text()
+  //         .replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>")
+  //     );
+  //   });
+
+  setTimeout(() => {
+    document.getElementById("about-wrapper2").style.opacity = 1;
+  }, 100);
+
+  anime.timeline({ loop: false }).add({
+    targets: ".ml13 .letter",
+    translateY: [0, -100],
+    opacity: [1, 0],
+    easing: "easeInExpo",
+    duration: 1200,
+    delay: function(el, i) {
+      return 30 * i;
+    }
+  });
+  console.log("callback");
+}
+
+// wrapper 5
+
+function callback5() {
+  setTimeout(() => {
+    document.getElementById("about-wrapper5").style.opacity = 1;
+  }, 300);
+
+  anime.timeline({ loop: false }).add({
+    targets: ".ml13 .letter",
+    translateY: [100, 0],
+    translateZ: 0,
+    opacity: [0, 1],
+    easing: "easeOutExpo",
+    duration: 1400,
+    delay: function(el, i) {
+      return 30 * i;
+    }
+  });
+  console.log("callback");
+}
+
+function reverse_callback5() {
+  //   $(".ml13").each(function() {
+  //     $(this).html(
+  //       $(this)
+  //         .text()
+  //         .replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>")
+  //     );
+  //   });
+
+  setTimeout(() => {
+    document.getElementById("about-wrapper5").style.opacity = 1;
+  }, 100);
+
+  anime.timeline({ loop: false }).add({
+    targets: ".ml13 .letter",
+    translateY: [0, -100],
+    opacity: [1, 0],
+    easing: "easeInExpo",
+    duration: 1200,
+    delay: function(el, i) {
+      return 30 * i;
+    }
+  });
+  console.log("callback");
+}
+
+//wrapper 4
+function callback4() {
+  setTimeout(() => {
+    document.getElementById("about-wrapper4").style.opacity = 1;
+  }, 300);
+
+  anime.timeline({ loop: false }).add({
+    targets: ".ml13 .letter",
+    translateY: [100, 0],
+    translateZ: 0,
+    opacity: [0, 1],
+    easing: "easeOutExpo",
+    duration: 1400,
+    delay: function(el, i) {
+      return 30 * i;
+    }
+  });
+  console.log("callback");
+}
+
+function reverse_callback4() {
+  //   $(".ml13").each(function() {
+  //     $(this).html(
+  //       $(this)
+  //         .text()
+  //         .replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>")
+  //     );
+  //   });
+
+  setTimeout(() => {
+    document.getElementById("about-wrapper4").style.opacity = 1;
+  }, 100);
+
+  anime.timeline({ loop: false }).add({
+    targets: ".ml13 .letter",
+    translateY: [0, -100],
+    opacity: [1, 0],
+    easing: "easeInExpo",
+    duration: 1200,
+    delay: function(el, i) {
+      return 30 * i;
+    }
+  });
+  console.log("callback");
+}
+
+//wrapper 6
+function callback6() {
+  setTimeout(() => {
+    document.getElementById("about-wrapper6").style.opacity = 1;
+  }, 300);
+
+  anime.timeline({ loop: false }).add({
+    targets: ".ml13 .letter",
+    translateY: [100, 0],
+    translateZ: 0,
+    opacity: [0, 1],
+    easing: "easeOutExpo",
+    duration: 1400,
+    delay: function(el, i) {
+      return 30 * i;
+    }
+  });
+  console.log("callback");
+}
+
+function reverse_callback6() {
+  //   $(".ml13").each(function() {
+  //     $(this).html(
+  //       $(this)
+  //         .text()
+  //         .replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>")
+  //     );
+  //   });
+
+  setTimeout(() => {
+    document.getElementById("about-wrapper6").style.opacity = 1;
+  }, 100);
+
+  anime.timeline({ loop: false }).add({
+    targets: ".ml13 .letter",
+    translateY: [0, -100],
+    opacity: [1, 0],
+    easing: "easeInExpo",
+    duration: 1200,
+    delay: function(el, i) {
+      return 30 * i;
+    }
+  });
+  console.log("callback");
+}
+
+
+
+
 
 var controller = new ScrollMagic.Controller();
 new ScrollMagic.Scene({
@@ -84,6 +275,170 @@ new ScrollMagic.Scene({
     }
   });
 //   .on("end", callback);
+
+
+new ScrollMagic.Scene({
+  triggerElement: "#trigger2",
+  triggerHook: "onEnter",
+  //offset: "300",
+  duration: "100%"
+})
+  //   .setPin("#about-wrapper")
+  .addIndicators({ name: "random2" })
+  .addTo(controller)
+  .on("start end", function(e) {
+    if (
+      e.type == "end" &&
+      e.target.controller().info("scrollDirection") == "FORWARD"
+    ) {
+      callback2();
+    }
+    if (
+      e.type == "end" &&
+      e.target.controller().info("scrollDirection") == "REVERSE"
+    ) {
+      reverse_callback2();
+    }
+  });
+
+
+
+
+new ScrollMagic.Scene({
+  triggerElement: "#trigger3",
+  triggerHook: "onEnter",
+  //offset: "300",
+  duration: "100%"
+})
+  //   .setPin("#about-wrapper")
+  .addIndicators({ name: "random" })
+  .addTo(controller)
+  .on("start end", function(e) {
+    if (
+      e.type == "end" &&
+      e.target.controller().info("scrollDirection") == "FORWARD"
+    ) {
+      callback3();
+    }
+    if (
+      e.type == "end" &&
+      e.target.controller().info("scrollDirection") == "REVERSE"
+    ) {
+      reverse_callback3();
+    }
+  });
+
+
+
+  
+new ScrollMagic.Scene({
+  triggerElement: "#trigger4",
+  triggerHook: "onEnter",
+  offset: "300",
+  duration: "100%"
+})
+  //   .setPin("#about-wrapper")
+  .addIndicators({ name: "random" })
+  .addTo(controller)
+  .on("start end", function(e) {
+    if (
+      e.type == "end" &&
+      e.target.controller().info("scrollDirection") == "FORWARD"
+    ) {
+      callback4();
+    }
+    if (
+      e.type == "end" &&
+      e.target.controller().info("scrollDirection") == "REVERSE"
+    ) {
+      reverse_callback4();
+    }
+  });
+
+
+
+  
+new ScrollMagic.Scene({
+  triggerElement: "#trigger5",
+  triggerHook: "onEnter",
+  offset: "300",
+  duration: "100%"
+})
+  //   .setPin("#about-wrapper")
+  .addIndicators({ name: "random" })
+  .addTo(controller)
+  .on("start end", function(e) {
+    if (
+      e.type == "end" &&
+      e.target.controller().info("scrollDirection") == "FORWARD"
+    ) {
+      callback5();
+    }
+    if (
+      e.type == "end" &&
+      e.target.controller().info("scrollDirection") == "REVERSE"
+    ) {
+      reverse_callback5();
+    }
+  });
+
+
+
+  
+new ScrollMagic.Scene({
+  triggerElement: "#trigger6",
+  triggerHook: "onEnter",
+  offset: "300",
+  duration: "100%"
+})
+  //   .setPin("#about-wrapper")
+  .addIndicators({ name: "random" })
+  .addTo(controller)
+  .on("start end", function(e) {
+    if (
+      e.type == "end" &&
+      e.target.controller().info("scrollDirection") == "FORWARD"
+    ) {
+      callback6();
+    }
+    if (
+      e.type == "end" &&
+      e.target.controller().info("scrollDirection") == "REVERSE"
+    ) {
+      reverse_callback6();
+    }
+  });
+
+
+
+
+  
+new ScrollMagic.Scene({
+  triggerElement: "#trigger7",
+  triggerHook: "onLeave",
+  offset: "300",
+  duration: "110%"
+})
+  //   .setPin("#about-wrapper")
+  .addIndicators({ name: "random" })
+  .addTo(controller)
+  .on("start end", function(e) {
+    if (
+      e.type == "end" &&
+      e.target.controller().info("scrollDirection") == "FORWARD"
+    ) {
+      callback7();
+    }
+    if (
+      e.type == "end" &&
+      e.target.controller().info("scrollDirection") == "REVERSE"
+    ) {
+      reverse_callback7();
+    }
+  });
+
+
+
 
 // closing function for menu options
 

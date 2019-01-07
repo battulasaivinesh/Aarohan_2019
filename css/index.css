@@ -314,6 +314,15 @@ body {
   opacity: 0;
 }
 
+#about-wrapper2,#about-wrapper3,#about-wrapper4,#about-wrapper5,#about-wrapper6 {
+  position: absolute;
+  top: 40vh;
+  width: 100vw;
+  text-align: center;
+  color: white;
+  opacity: 0;
+}
+
 .hidden {
   height: 0;
   width: 0;
