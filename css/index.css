@@ -431,6 +431,49 @@ body {
   position: relative;
 }
 
+.content h3{
+	text-align: center;
+	font-weight: bolder;
+	color: rgba(15,15,15,0.6)
+}
+
+.team_box{
+  padding: 15vh 10vw;
+}
+
+.card {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  border: none;
+}
+
+.content p{
+	text-align: center;
+	font-weight: bolder;
+	color: rgba(15,15,15,0.4);
+}
+
+@media only screen and (max-width: 768px) {
+  .card img{
+    width: 50vw;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .card img{
+    width: "100%";
+    height: auto;
+  }
+}
+
+.fa {
+	padding: 0 5px;
+}
+
+
+/* */
+
 .scroller-right {
   position: absolute;
   right: 20px;
@@ -510,7 +553,7 @@ body {
   }
 
   .overlay a {
-    font-size: 70px;
+    font-size: 3rem;
   }
   .overlay .closebtn {
     font-size: 40px;
@@ -569,7 +612,7 @@ body {
   }
 
   .overlay a {
-    font-size: 20px;
+    font-size: 4rem;
   }
   .overlay .closebtn {
     font-size: 40px;
