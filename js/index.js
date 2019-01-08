@@ -65,11 +65,11 @@ var controller = new ScrollMagic.Controller();
 new ScrollMagic.Scene({
   triggerElement: "#trigger1",
   triggerHook: "onLeave",
-  offset: "300",
-  duration: "110%"
+  offset: "0",
+  duration: "100%"
 })
-  //   .setPin("#about-wrapper")
-  //   .addIndicators({ name: "random" })
+  // .setPin("#about-wrapper")
+  //   .addIndicRators({ name: "random" })
   .addTo(controller)
   .on("start end", function(e) {
     if (
