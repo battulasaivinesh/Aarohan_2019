@@ -421,6 +421,11 @@ body {
   }
 }
 
+/* major attractions */
+.mjrattractions {
+  padding-bottom: 10%;
+}
+
 /* team  */
 .team {
   position: relative;
