@@ -388,6 +388,7 @@ body {
   background-color: white;
   border-radius: 8px;
   margin: 10vh 13vw;
+  box-shadow: 5px 5px 16px hotpink;
 }
 
 .content h3{
@@ -398,7 +399,7 @@ body {
 }
 
 .team_box{
-  padding: 10vh 0;
+  padding: 10vh 10px;
 }
 
 .card {
