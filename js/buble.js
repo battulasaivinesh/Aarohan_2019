@@ -39,7 +39,7 @@ animate = function(){
       borderTopRightRadius:  String(Math.round((Math.random()*randomness2 + threshold2)) + 'px'),
       borderBottomLeftRadius:  String(Math.round((Math.random()*randomness2 + threshold2)) + 'px'),
       borderBottomRightRadius:  String(Math.round((Math.random()*randomness2 + threshold2)) + 'px'),
-    backgroundColor: rgb2hex('rgba(' + randomNumBlue + ',' + randomNumOrange + ', 215)') 
+    //backgroundColor: rgb2hex('rgba(' + randomNumBlue + ',' + randomNumOrange + ', 215)') 
     },anim_duration2,animate);
 	
 	$('.fluiddark').animate({
