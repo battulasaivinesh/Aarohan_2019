@@ -5,13 +5,13 @@ body {
 
 /* loader */
 .loader_img {
-    width: 25vw;
-    position: absolute;
-    top: 25vh;
-    left: 37.5vw;
+  width: 25vw;
+  position: absolute;
+  top: 25vh;
+  left: 37.5vw;
 }
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width: 600px) {
   .loader_img {
     width: 70vw;
     position: absolute;
@@ -25,7 +25,7 @@ body {
   z-index: 555;
   height: 100vh;
   width: 100vw;
-  background-color: rgb(248,255,248);
+  background-color: rgb(248, 255, 248);
 }
 
 /* social icons */
@@ -41,7 +41,6 @@ body {
   color: white;
   font-size: 2rem;
 }
-
 
 /* navbar new */
 .overlay {
@@ -370,35 +369,38 @@ body {
   justify-content: center;
 }
 
-.img_holder{
-    width: auto;
-    height: 40px;
-    margin: 4rem 5rem;
+.img_holder {
+  width: auto;
+  height: 40px;
+  margin: 4rem 5rem;
 }
-
 
 /* team  */
 .team {
   position: relative;
+  background-color: #ff5656;
+  padding-bottom: 10vh;
 }
 
-.team_container{
+.team_container {
   margin: 0 10vw;
   overflow: hidden;
   background-color: white;
   border-radius: 8px;
+  /* margin-bottom: 0; */
   margin: 10vh 13vw;
-  box-shadow: 5px 5px 16px hotpink;
+  margin-bottom: 0;
+  box-shadow: 0 0px 114px #0000007a;
 }
 
-.content h3{
+.content h3 {
   padding-top: 1.2rem;
-	text-align: center;
-	font-weight: bolder;
-	color: rgba(15,15,15,0.6)
+  text-align: center;
+  font-weight: bolder;
+  color: rgba(15, 15, 15, 0.6);
 }
 
-.team_box{
+.team_box {
   padding: 10vh 10px;
 }
 
@@ -409,33 +411,32 @@ body {
   border: none;
 }
 
-.content p{
+.content p {
   font-size: 1.3rem;
   margin: 0;
   padding: 0.25rem 0;
-	text-align: center;
-	font-weight: bolder;
-	color: rgba(15,15,15,0.4);
+  text-align: center;
+  font-weight: bolder;
+  color: rgba(15, 15, 15, 0.4);
 }
 
 @media only screen and (max-width: 768px) {
-  .card img{
+  .card img {
     width: "100%";
     height: auto;
   }
 }
 
 @media only screen and (min-width: 769px) {
-  .card img{
+  .card img {
     width: "100%";
     height: auto;
   }
 }
 
 .fa {
-	padding: 0 0.5rem;
+  padding: 0 0.5rem;
 }
-
 
 /* */
 
