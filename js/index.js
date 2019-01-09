@@ -1,19 +1,14 @@
-//loader
-window.onload = function() {
-    document.getElementById('loader').style.opacity = 0;
-    console.log("loader");
-};
-
 
 //navbar
 
 $(document).ready(function() {
 
+//loader
   setTimeout(
     function(){
       document.getElementById('loader').style.display = "none";
-    },2000);
-    
+    },4000);
+
   $(".hamburger").click(function() {
     $(this).toggleClass("is-active");
   });

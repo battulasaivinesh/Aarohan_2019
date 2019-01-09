@@ -11,6 +11,15 @@ body {
     left: 37.5vw;
 }
 
+@media only screen and (max-width:600px){
+  .loader_img {
+    width: 70vw;
+    position: absolute;
+    top: 25vh;
+    left: 15vw;
+  }
+}
+
 .loader {
   position: absolute;
   z-index: 555;
