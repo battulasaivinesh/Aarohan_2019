@@ -330,7 +330,7 @@ body {
 
 
 .sponsors_content {
-  height: 100vh;
+  height: 100%;
   background-color: white;
   padding: 10%;
 }
