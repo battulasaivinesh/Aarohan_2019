@@ -21,7 +21,7 @@ body {
 }
 
 .loader {
-  position: absolute;
+  position: fixed;
   z-index: 555;
   height: 100vh;
   width: 100vw;
@@ -352,7 +352,11 @@ body {
 }
 
 /* sponsors */
-
+.sponsors_head {
+  font-size: 4rem;
+  text-align: center;
+  padding-bottom: 8rem;
+}
 
 .sponsors_content {
   height: 100%;
@@ -378,6 +382,14 @@ body {
   position: relative;
 }
 
+.team_container{
+  margin: 0 10vw;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 8px;
+  margin: 10vh 13vw;
+}
+
 .content h3{
   padding-top: 1.2rem;
 	text-align: center;
@@ -386,16 +398,18 @@ body {
 }
 
 .team_box{
-  padding: 15vh 10vw;
+  padding: 10vh 0;
 }
 
 .card {
   padding-left: 0 !important;
   padding-right: 0 !important;
+  padding-bottom: 4rem;
   border: none;
 }
 
 .content p{
+  font-size: 1.3rem;
   margin: 0;
   padding: 0.25rem 0;
 	text-align: center;
