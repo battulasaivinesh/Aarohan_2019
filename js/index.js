@@ -31,7 +31,6 @@ function callback() {
       return 30 * i;
     }
   });
-  console.log("callback");
 }
 
 function reverse_callback() {
@@ -58,7 +57,6 @@ function reverse_callback() {
       return 30 * i;
     }
   });
-  console.log("callback");
 }
 
 var controller = new ScrollMagic.Controller();
@@ -167,13 +165,6 @@ $(document).ready(function() {
   });	
 });	
 
- function openNav() {	
-  document.getElementById("mySidenav").style.width = "100%";	
-}	
-
- function closeNav() {	
-  document.getElementById("mySidenav").style.width = "0";	
-}	
 
 
 

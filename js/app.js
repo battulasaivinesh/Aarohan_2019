@@ -7589,7 +7589,7 @@ var _gsScope, objectFitImages = function() {
             }, this.feature = e || (this.platform.isIE8 || this.platform.isIE9 || this.platform.isIE10 ? "flash" : "iframe"), this[this.feature].init(), this.registerPackage()
         }, c.onApiReady = function() {
             var e, t, i, n;
-            for (e in console.log(this.feature, "API ready, initialize Video."), this.ApiReady = !0, n = [], i = this.YTplayers) o.call(i, e) && ((t = i[e]).initialized ? n.push(void 0) : n.push(t = this[this.feature].initializeVideo(e, t)));
+            for (e in console.log(), this.ApiReady = !0, n = [], i = this.YTplayers) o.call(i, e) && ((t = i[e]).initialized ? n.push(void 0) : n.push(t = this[this.feature].initializeVideo(e, t)));
             return n
         }, c.pushToQueue = function(e, t) {
             return this.YTplayers[e] = t, this.YTplayers[e].initialized = !1
@@ -7692,7 +7692,7 @@ var _gsScope, objectFitImages = function() {
             }, r = function(e) {
                 return l.fullscreenElement() ? i() : t(e)
             }, n = function() {
-                return console.log("fullScreenEventName evoked"), null != document.msExitFullscreen ? "MSFullscreenChange" : null != document.mozCancelFullScreen ? "mozfullscreenchange" : null != document.webkitExitFullscreen ? "webkitfullscreenchange" : ""
+                null != document.msExitFullscreen ? "MSFullscreenChange" : null != document.mozCancelFullScreen ? "mozfullscreenchange" : null != document.webkitExitFullscreen ? "webkitfullscreenchange" : ""
             }, document.addEventListener(n(), function() {
                 if (!l.fullscreenElement()) return i()
             }), l.fullscreenElement = function() {
