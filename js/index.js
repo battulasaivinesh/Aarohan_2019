@@ -6,7 +6,7 @@ $(document).ready(function() {
 //loader
   setTimeout(
     function(){
-      document.getElementById('loader').style.display = "none";
+      $( "#loader" ).fadeOut("slow","linear");
     },4000);
 
   $(".hamburger").click(function() {
