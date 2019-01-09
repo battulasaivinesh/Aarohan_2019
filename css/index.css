@@ -470,6 +470,15 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  .social_links {
+    left: 2rem;
+    bottom: 2rem;
+  }
+
+  .hamburger {
+    margin: 2rem;
+  }
+
   .events_illst .image img {
     height: auto;
     width: 80%;
