@@ -1,6 +1,15 @@
+
 body {
   margin: 0;
   background: #818181;
+}
+
+h1{
+  font-family: 'Work Sans', sans-serif;
+}
+
+p {
+  font-family: 'Bitter', serif;
 }
 
 /* loader */
