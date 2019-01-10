@@ -188,7 +188,8 @@ p {
   top: 28%;
   animation-name: translate-horizontal;
   animation-iteration-count: infinite;
-  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-duration: 20s;
 }
 
 .cloud2 {
@@ -197,7 +198,8 @@ p {
   z-index: 5;
   animation-name: translate-horizontal;
   animation-iteration-count: infinite;
-  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-duration: 20s;
   left: 42%;
   top: 24%;
 }
@@ -208,7 +210,8 @@ p {
   z-index: 5;
   animation-name: translate-horizontal;
   animation-iteration-count: infinite;
-  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-duration: 20s;
   top: 29%;
   left: 57%;
 }
@@ -680,8 +683,14 @@ p {
   0% {
     transform: translateX(0);
   }
+  25% {
+    transform: translateX(-100px);
+  }
   50% {
-    transform: translateX(-50px);
+    transform: translateX(0px);
+  }
+  75% {
+    transform: translateX(100px);
   }
   100% {
     transform: translateX(0);
