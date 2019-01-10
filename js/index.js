@@ -195,9 +195,9 @@ $win
       m = Math.round(e.pageX);
       first = 0;
     }
-    $(".cloud1").css("opacity", 1 - (m / w) * 2);
-    $(".cloud2").css("opacity", 1 - (m / w) * 2);
-    $(".cloud3").css("opacity", 1 - (m / w) * 2);
+    $(".cloud1 img").css("opacity", 1 - (m / w) * 2);
+    $(".cloud2 img").css("opacity", 1 - (m / w) * 2);
+    $(".cloud3 img").css("opacity", 1 - (m / w) * 2);
 
     // setTimeout(function() {
     //   let l = Math.round(e.pageX);
