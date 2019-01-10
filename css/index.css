@@ -335,9 +335,12 @@ p {
   bottom: 50%;
 }
 
+.rightshift {
+  padding-left: 24%;
+}
+
 .ml13 {
   font-size: 3em;
-  padding-left: 24%;
   text-transform: uppercase;
   letter-spacing: 0.5em;
   font-weight: 600;
