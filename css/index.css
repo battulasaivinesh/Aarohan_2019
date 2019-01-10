@@ -1,15 +1,14 @@
-
 body {
   margin: 0;
   background: #818181;
 }
 
-h1{
-  font-family: 'Work Sans', sans-serif;
+h1 {
+  font-family: "Work Sans", sans-serif;
 }
 
 p {
-  font-family: 'Bitter', serif;
+  font-family: "Bitter", serif;
 }
 
 /* loader */
@@ -206,14 +205,16 @@ p {
   /* display: flex; */
   /* justify-content: center; */
   width: 100vw;
+  text-align: center;
 }
 
 .birdimg img {
   width: 60vw;
+
   height: auto;
-  /* animation-name: translate;
+  animation-name: translate;
   animation-iteration-count: infinite;
-  animation-duration: 3s; */
+  animation-duration: 3s;
 }
 
 .ui-resizable-e {
