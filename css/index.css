@@ -1,6 +1,15 @@
+
 body {
   margin: 0;
   background: #818181;
+}
+
+h1{
+  font-family: 'Work Sans', sans-serif;
+}
+
+p {
+  font-family: 'Bitter', serif;
 }
 
 /* loader */
@@ -293,7 +302,7 @@ body {
 }
 
 .ml13 {
-  font-size: 1.9em;
+  font-size: 2em;
   text-transform: uppercase;
   letter-spacing: 0.5em;
   font-weight: 600;
