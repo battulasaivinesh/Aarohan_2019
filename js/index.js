@@ -1,13 +1,10 @@
-
 //navbar
 
 $(document).ready(function() {
-
-//loader
-  setTimeout(
-    function(){
-      $( "#loader" ).fadeOut("slow","linear");
-    },4000);
+  //loader
+  setTimeout(function() {
+    $("#loader").fadeOut("slow", "linear");
+  }, 4000);
 
   $(".hamburger").click(function() {
     $(this).toggleClass("is-active");
@@ -93,88 +90,85 @@ new ScrollMagic.Scene({
   });
 //   .on("end", callback);
 
-// closing function for menu options	
+// closing function for menu options
 
-var menuopt = $(".overlay-content a");	
-menuopt.click(function() {	
-  $(".hamburger").toggleClass("is-active");	
-});	
+var menuopt = $(".overlay-content a");
+menuopt.click(function() {
+  $(".hamburger").toggleClass("is-active");
+});
 
- // for menu closing	
-$(document).ready(function() {	
-  $("#menu").click(function() {	
-    if (document.getElementById("myNav").style.width == "100%") {	
-      document.getElementById("myNav").style.width = "0%";	
-    } else {	
-      document.getElementById("myNav").style.width = "100%";	
-    }	
-  });	
-  $(".overlay-content a").click(function() {	
-    document.getElementById("myNav").style.width = "0%";	
-  });	
-});	
+// for menu closing
+$(document).ready(function() {
+  $("#menu").click(function() {
+    if (document.getElementById("myNav").style.width == "100%") {
+      document.getElementById("myNav").style.width = "0%";
+    } else {
+      document.getElementById("myNav").style.width = "100%";
+    }
+  });
+  $(".overlay-content a").click(function() {
+    document.getElementById("myNav").style.width = "0%";
+  });
+});
 
- //	
+//
 
- $(document).ready(function() {	
-  $("#open").click(function() {	
-    $("#root").animate(	
-      {	
-        marginTop: "10vh",	
-        marginLeft: "10vw",	
-        marginRight: "10vw",	
-        opacity: "0.7",	
-        width: "80vw"	
-      },	
-      800	
-    );	
-    $("#open").animate(	
-      {	
-        opacity: "0"	
-      },	
-      800	
-    );	
-  });	
-});	
+$(document).ready(function() {
+  $("#open").click(function() {
+    $("#root").animate(
+      {
+        marginTop: "10vh",
+        marginLeft: "10vw",
+        marginRight: "10vw",
+        opacity: "0.7",
+        width: "80vw"
+      },
+      800
+    );
+    $("#open").animate(
+      {
+        opacity: "0"
+      },
+      800
+    );
+  });
+});
 
- $(document).ready(function() {	
-  $(".closebtn").click(function() {	
-    $("#root").animate(	
-      {	
-        marginLeft: 0,	
-        marginTop: 0,	
-        opacity: "1",	
-        width: "100vw"	
-      },	
-      2000	
-    );	
+$(document).ready(function() {
+  $(".closebtn").click(function() {
+    $("#root").animate(
+      {
+        marginLeft: 0,
+        marginTop: 0,
+        opacity: "1",
+        width: "100vw"
+      },
+      2000
+    );
 
-     $("#open").animate(	
-      {	
-        opacity: "1"	
-      },	
-      2000	
-    );	
-  });	
+    $("#open").animate(
+      {
+        opacity: "1"
+      },
+      2000
+    );
+  });
 
-   $(document).ready(function() {	
-    $(".closebtn").click(function() {	
-      $("#a1").fadeOut(700, "swing");	
-      $("#a2").fadeOut(700, "swing");	
-      $("#a3").fadeOut(700, "swing");	
-    });	
-  });	
-  $(document).ready(function() {	
-    $("#open").click(function() {	
-      $("#a1").fadeIn();	
-      $("#a2").fadeIn();	
-      $("#a3").fadeIn();	
-    });	
-  });	
-});	
-
-
-
+  $(document).ready(function() {
+    $(".closebtn").click(function() {
+      $("#a1").fadeOut(700, "swing");
+      $("#a2").fadeOut(700, "swing");
+      $("#a3").fadeOut(700, "swing");
+    });
+  });
+  $(document).ready(function() {
+    $("#open").click(function() {
+      $("#a1").fadeIn();
+      $("#a2").fadeIn();
+      $("#a3").fadeIn();
+    });
+  });
+});
 
 //landingpage
 
@@ -194,8 +188,8 @@ $win
   .mousemove(function(e) {
     var m;
 
-    var color1 = [7, 59, 76];
-    var color2 = [218, 239, 249];
+    var color1 = [16, 36, 66];
+    var color2 = [255, 255, 255];
 
     if (first++) {
       m = Math.round(e.pageX);
@@ -242,4 +236,3 @@ $(function() {
     handles: "e"
   });
 });
-
