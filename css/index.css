@@ -248,9 +248,9 @@ p {
   width: 60vw;
 
   height: auto;
-  animation-name: translate;
+  /* animation-name: translate;
   animation-iteration-count: infinite;
-  animation-duration: 3s;
+  animation-duration: 3s; */
 }
 
 .ui-resizable-e {
