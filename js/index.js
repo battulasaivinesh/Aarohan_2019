@@ -211,7 +211,7 @@ $win
       color1[1] + Math.round((m / w) * (color2[1] - color1[1])),
       color1[2] + Math.round((m / w) * (color2[2] - color1[2]))
     ];
-    $(".about").css("background", "rgb(" + rgb.join(",") + ")");
+    $("#landing_container").css("background", "rgb(" + rgb.join(",") + ")");
     m--;
     //   }
     //   if (l >= w / 2) k = l;

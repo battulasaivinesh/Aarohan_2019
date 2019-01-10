@@ -218,6 +218,14 @@ body {
   position: relative;
 }
 
+.about-img {
+    position: absolute;
+    top: 0;
+    left: 5vw;
+    width: 75%;
+    height: 65%;
+}
+
 .about-heading {
   position: absolute;
   z-index: 999999;
@@ -237,6 +245,7 @@ body {
   color: white;
   opacity: 0;
 }
+
 
 #about-wrapper2 {
   position: absolute;
@@ -321,11 +330,17 @@ body {
   padding-top: 20rem;
   padding: 2rem;
   padding-right: 5%;
+  margin-top: 5rem;
+  text-align: center;
 }
 
 .events_txt h1 {
-  font-size: 3rem;
+  font-size: 3.7rem;
   padding-bottom: 1.5rem;
+}
+
+.events_txt p {
+  font-size: 2rem;
 }
 
 @keyframes rotate {
