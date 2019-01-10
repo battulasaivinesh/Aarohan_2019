@@ -223,7 +223,11 @@ body {
     top: 0;
     left: 5vw;
     width: 75%;
-    height: 65%;
+    height: 75%;
+}
+
+.image-info p {
+  font-size: 2rem;
 }
 
 .about-heading {
