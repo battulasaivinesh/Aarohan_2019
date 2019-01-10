@@ -188,7 +188,8 @@ p {
   top: 28%;
   animation-name: translate-horizontal;
   animation-iteration-count: infinite;
-  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-duration: 20s;
 }
 
 .cloud2 {
@@ -197,7 +198,8 @@ p {
   z-index: 5;
   animation-name: translate-horizontal;
   animation-iteration-count: infinite;
-  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-duration: 20s;
   left: 42%;
   top: 24%;
 }
@@ -208,7 +210,8 @@ p {
   z-index: 5;
   animation-name: translate-horizontal;
   animation-iteration-count: infinite;
-  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-duration: 20s;
   top: 29%;
   left: 57%;
 }
@@ -245,9 +248,9 @@ p {
   width: 60vw;
 
   height: auto;
-  animation-name: translate;
+  /* animation-name: translate;
   animation-iteration-count: infinite;
-  animation-duration: 3s;
+  animation-duration: 3s; */
 }
 
 .ui-resizable-e {
@@ -340,7 +343,7 @@ p {
 }
 
 .ml13 {
-  font-size: 3em;
+  font-size: 2em;
   text-transform: uppercase;
   letter-spacing: 0.5em;
   font-weight: 600;
@@ -381,7 +384,6 @@ p {
   padding: 2rem;
   padding-right: 5%;
   margin-top: 5rem;
-  text-align: center;
 }
 
 .events_txt h1 {
@@ -582,7 +584,7 @@ p {
   }
 
   .hamburger {
-    margin: 2rem;
+    margin: 3rem 2rem;
   }
 
   .events_illst .image img {
@@ -683,8 +685,14 @@ p {
   0% {
     transform: translateX(0);
   }
+  25% {
+    transform: translateX(-100px);
+  }
   50% {
-    transform: translateX(-50px);
+    transform: translateX(0px);
+  }
+  75% {
+    transform: translateX(100px);
   }
   100% {
     transform: translateX(0);
