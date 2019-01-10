@@ -203,17 +203,17 @@ p {
 }
 
 .birdimg {
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
+  /* justify-content: center; */
   width: 100vw;
 }
 
 .birdimg img {
-  width: 35vw;
-  height: 35vw;
-  animation-name: translate;
+  width: 60vw;
+  height: auto;
+  /* animation-name: translate;
   animation-iteration-count: infinite;
-  animation-duration: 3s;
+  animation-duration: 3s; */
 }
 
 .ui-resizable-e {
@@ -228,11 +228,11 @@ p {
 }
 
 .about-img {
-    position: absolute;
-    top: 0;
-    left: 5vw;
-    width: 75%;
-    height: 75%;
+  position: absolute;
+  top: 0;
+  left: 5vw;
+  width: 75%;
+  height: 75%;
 }
 
 .image-info p {
@@ -258,7 +258,6 @@ p {
   color: white;
   opacity: 0;
 }
-
 
 #about-wrapper2 {
   position: absolute;
