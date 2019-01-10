@@ -180,6 +180,39 @@ p {
 
 /* landing page */
 
+.cloud1 {
+  width: 13vw !important;
+  position: absolute;
+  z-index: 5;
+  left: 30%;
+  top: 28%;
+  animation-name: translate-horizontal;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+}
+
+.cloud2 {
+  width: 13vw !important ;
+  position: absolute;
+  z-index: 5;
+  animation-name: translate-horizontal;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  left: 42%;
+  top: 24%;
+}
+
+.cloud3 {
+  width: 13vw !important;
+  position: absolute;
+  z-index: 5;
+  animation-name: translate-horizontal;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  top: 29%;
+  left: 57%;
+}
+
 #landing {
   height: 100vh;
   display: flex;
@@ -640,5 +673,17 @@ p {
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+@keyframes translate-horizontal {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
