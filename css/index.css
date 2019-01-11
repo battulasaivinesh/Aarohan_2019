@@ -96,6 +96,7 @@ p {
 .dates {
   position: absolute;
   left: 40vw;
+  font-weight: 600;
   top: 75vh;
   text-align: center;
   width: 20vw;
@@ -264,9 +265,10 @@ p {
 }
 
 .ui-resizable-e {
-  width: 10px !important;
+  width: 25px !important;
+  right: -17px !important;
   top: 50% !important;
-  height: 15px !important;
+  height: 21px !important;
 }
 
 /* about us */
@@ -586,11 +588,11 @@ p {
   }
 
   .view-after {
-    border-right: 2px solid orange;
+    border-right: 2px solid white;
   }
 
   .ui-resizable-e {
-    background: url(http://i.stack.imgur.com/Xkiaa.png) no-repeat;
+    background: url(../img/arrow-red.png) no-repeat;
   }
 
   /* navbar */
@@ -740,10 +742,10 @@ p {
 }
 
 .ath_img {
-  width: 20vw;
+  width: 33vw;
   position: absolute;
-  left: 3vw;
-  top: -5vh;
+  left: 6vw;
+  top: -6vh;
 }
 
 @media screen and (max-width: 600px) {
@@ -757,6 +759,7 @@ p {
 .contact {
   height: 100vh;
   background-position: right;
+  background-repeat-x: no-repeat;
   background-image: url(../img/contact-us.png);
   background-size: auto 100vh;
 }

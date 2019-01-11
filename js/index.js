@@ -199,6 +199,21 @@ $win
     $(".cloud2 img").css("opacity", 1 - (m / w) * 2);
     $(".cloud3 img").css("opacity", 1 - (m / w) * 2);
 
+    rgb2 = [
+      Math.round((1 - m / w) * 255),
+      Math.round((1 - m / w) * 255),
+      Math.round((1 - m / w) * 255)
+    ];
+
+    var scroll = $(window).scrollTop();
+
+    if (scroll < 1000) {
+      $(".dates").css("color", "rgb(" + rgb2.join(",") + ")");
+      $(".fa-icon").css("color", "rgb(" + rgb2.join(",") + ")");
+    } else {
+      $(".fa-icon").css("color", "#ffffff");
+    }
+
     // setTimeout(function() {
     //   let l = Math.round(e.pageX);
 
