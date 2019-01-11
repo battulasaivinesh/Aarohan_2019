@@ -93,6 +93,16 @@ p {
   font-size: 60px;
 }
 
+.dates {
+  position: absolute;
+  left: 40vw;
+  top: 75vh;
+  text-align: center;
+  width: 20vw;
+  font-size: 3rem;
+  font-family: "Work Sans", sans-serif;
+}
+
 /*  */
 
 .hamburger {
@@ -342,19 +352,22 @@ p {
   padding-left: 24%;
 }
 
-.ml13 {
+.heading {
   font-size: 2em;
   text-transform: uppercase;
   letter-spacing: 0.5em;
   font-weight: 600;
 }
 
-.ml13 .letter {
-  display: inline-block;
-  line-height: 1em;
-}
 
 /* events */
+
+.postop {
+  top: -36vh;
+  left: 38vw;
+  line-height: 4rem;
+  position: absolute;
+}
 
 .event_box {
   padding: 10% 20%;
@@ -419,6 +432,13 @@ p {
 
 .mjrattractions .events_txt {
   margin-top: 0;
+}
+
+.shiftplace {
+  position: absolute;
+  top: 34vh;
+  line-height: 4rem;
+  right: 5vw;
 }
 
 /* sponsors */
@@ -656,6 +676,21 @@ p {
   width: 30vw;
   margin: 7rem;
 }
+
+.ath_img {
+  width:20vw;
+  position: absolute;
+  left: 3vw;
+  top: -5vh;
+}
+
+@media screen and (max-width:600px) {
+  .ath_img {
+    width: 80vw;
+    position: relative;
+  }
+}
+
 
 /* contact us */
 .contact {
