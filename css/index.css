@@ -551,7 +551,7 @@ p {
 
   .birdimg img {
     width: 60vw;
-    height: 60vw;
+    height: auto;
   }
 
   .view-after {
