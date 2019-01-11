@@ -417,6 +417,10 @@ p {
   padding-bottom: 10%;
 }
 
+.mjrattractions .events_txt {
+  margin-top: 0;
+}
+
 /* sponsors */
 .sponsors_head {
   font-size: 4rem;
