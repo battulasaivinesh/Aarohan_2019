@@ -538,7 +538,7 @@ p {
   left: -50px;
   width: 20vw;
   height: 20vw;
-  background: #00e6ea;
+  background: rgba(232, 148, 40);
   margin: 0 auto 0 0;
   border-radius: 50%;
   animation: rotate 30s infinite;
@@ -614,7 +614,7 @@ p {
     left: 10vw;
     width: 80vw;
     height: 80vw;
-    background: #00e6ea;
+    background: rgba(232, 148, 40);
     margin: 0 auto 0 0;
     border-radius: 50%;
     animation: rotate 30s infinite;
