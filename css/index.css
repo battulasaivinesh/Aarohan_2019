@@ -93,6 +93,16 @@ p {
   font-size: 60px;
 }
 
+.dates {
+  position: absolute;
+  left: 40vw;
+  top: 75vh;
+  text-align: center;
+  width: 20vw;
+  font-size: 3rem;
+  font-family: "Work Sans", sans-serif;
+}
+
 /*  */
 
 .hamburger {
