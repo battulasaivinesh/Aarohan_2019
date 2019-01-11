@@ -462,7 +462,7 @@ p {
   top: 34vh;
   text-align: left;
   line-height: 4rem;
-  right: 5vw;
+  right: 17vw;
 }
 
 /* sponsors */
@@ -773,7 +773,6 @@ p {
 /* ath */
 .ath {
   background-color: white;
-  padding-bottom: 12vh;
 }
 
 .hospitality {
@@ -797,13 +796,14 @@ p {
   width: 33vw;
   position: absolute;
   left: 6vw;
-  top: -6vh;
+  top: -17vh;
 }
 
 @media screen and (max-width: 600px) {
   .ath_img {
     width: 80vw;
     position: relative;
+    top: -4vh;
   }
 }
 
@@ -861,7 +861,7 @@ p {
     bottom: 10vh;
     padding: 0.5rem;
     left: 15vw;
-    width: 90vw;
+    width: 80vw;
   }
 
   .wdct p {
@@ -891,16 +891,16 @@ p {
   .contact-container h1 {
     font-size: 3rem;
   }
-  
+
   .contact-container h2 {
     font-size: 2rem;
     padding: 1rem 0;
   }
-  
+
   .contact-container p {
     font-size: 1.5rem;
   }
-  
+
   .contact-container a {
     font-size: 1.5rem;
   }
