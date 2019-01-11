@@ -11,6 +11,10 @@ p {
   font-family: "Bitter", serif;
 }
 
+#root {
+  position: relative;
+}
+
 /* loader */
 .loader_img {
   width: 25vw;
@@ -802,10 +806,11 @@ p {
   position: absolute;
 }
 
-.contact_container {
+.contact-container {
   position: relative;
   left: 40vw;
   top: 27vh;
+  width: 50vw;
 }
 
 .contact_container h1 {
