@@ -797,40 +797,103 @@ p {
 
 /* contact us */
 .contact {
-  width: 100vw;
-  height: auto;
-}
-
-.contact1 {
-  width: 100%;
-  position: absolute;
+  margin-top: 10vh;
 }
 
 .contact-container {
-  position: relative;
-  left: 40vw;
-  top: 27vh;
-  width: 50vw;
+  position: absolute;
+  bottom: 56vh;
+  left: 38vw;
 }
 
-.contact_container h1 {
+.contact-container h1 {
   font-size: 6rem;
 }
 
-.contact_container p {
+.contact-container h2 {
+  font-size: 4rem;
+  padding: 1rem 0;
+}
+
+.contact-container p {
   font-size: 2.5rem;
 }
 
-.contact_container a {
+.contact-container a {
   font-size: 2rem;
 }
 
+.wdct {
+  position: absolute;
+  bottom: 10vh;
+  left: 35vw;
+  width: 55vw;
+}
+
+.girl {
+  position: absolute;
+  bottom: 65vh;
+  right: 4.2vw;
+  width: 25vw;
+}
+
+.boy {
+  position: absolute;
+  bottom: 5.2vh;
+  width: 30vw;
+}
+
 @media screen and (max-width: 600px) {
-  .contact_container {
-    position: relative;
-    left: 35vw;
-    top: 11vh;
+  .wdct {
+    position: absolute;
+    bottom: 10vh;
+    padding: 0.5rem;
+    left: 15vw;
+    width: 90vw;
+}
   }
+
+  .wdct p {
+    font-size: 1.2rem;
+  }
+
+  .contact {
+    margin-top: 21vh;
+  }
+
+  .contact-container {
+    position: absolute;
+    bottom: 49vh;
+    left: 32vw;
+  }
+
+  .man {
+    display: none;
+  }
+
+  .girl {
+    position: absolute;
+    top: -9vh;
+    width: 100%;
+  }
+
+  .contact-container h1 {
+    font-size: 3rem;
+  }
+  
+  .contact-container h2 {
+    font-size: 2rem;
+    padding: 1rem 0;
+  }
+  
+  .contact-container p {
+    font-size: 1.5rem;
+  }
+  
+  .contact-container a {
+    font-size: 1.5rem;
+  }
+
   .arhn_logo {
     display: none;
   }
