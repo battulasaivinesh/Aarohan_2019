@@ -248,6 +248,10 @@ p {
   overflow: hidden;
 }
 
+.section_wrap {
+  padding-bottom: 15vh;
+}
+
 .birdimg {
   /* display: flex; */
   /* justify-content: center; */
@@ -637,7 +641,7 @@ p {
   .dates {
     position: absolute;
     left: 0;
-    top: 75vh;
+    top: 60vh;
     text-align: center;
     width: 100vw;
     font-weight: 600;
