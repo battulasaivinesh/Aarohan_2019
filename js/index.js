@@ -205,6 +205,12 @@ $win
       Math.round((1 - m / w) * 255)
     ];
 
+    if (m / w > 0.3 && m / w < 0.5) {
+      rgb2 = [178.5, 178.5, 178.5];
+    } else if (m / w > 0.5 && m / w < 0.7) {
+      rgb2 = [76.5, 76.5, 76.5];
+    }
+
     var scroll = $(window).scrollTop();
 
     if (scroll < 1000) {
