@@ -9,7 +9,7 @@
     <meta name="format-detection" content="telephone=no">
     <link rel="alternate" hreflang="it" href="https://arhn.co.in" />
     <link rel="canonical" href="https://arhn.co.in" />
-    <title>Aarohan 2019</title>
+    <title>Aarohan 2019 | The Annual Techno-Management Fest</title>
     <meta name="description" content="Aarohan is the official techno-management fest of National
     Institute of Technology, Durgapur organised by Centre for Cognitive Activities(CCA)" />
     <!--     <meta name="robots" content="index,follow" /> -->
@@ -1090,6 +1090,16 @@
             setTimeout(function () {
                 $("#loader").fadeOut("slow", "linear");
             }, 3000);
+
+            var color1 = [16, 36, 66];
+    var color2 = [255, 255, 255];
+
+            rgb = [
+            color1[0] + Math.round((0.5) * (color2[0] - color1[0])),
+            color1[1] + Math.round((0.5) * (color2[1] - color1[1])),
+            color1[2] + Math.round((0.5) * (color2[2] - color1[2]))
+            ];
+            $("#landing_container").css("background", "rgb(" + rgb.join(",") + ")");
         })
     </Script>
 </body>

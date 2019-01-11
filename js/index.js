@@ -210,9 +210,11 @@ $win
 
     if (scroll < 1000) {
       $(".dates").css("color", "rgb(" + rgb2.join(",") + ")");
+      $(".line").css("background-color", "rgb(" + rgb2.join(",") + ")");
       $(".fa-icon").css("color", "rgb(" + rgb2.join(",") + ")");
     } else {
       $(".fa-icon").css("color", "#ffffff");
+      $(".line").css("background-color", "#ffffff");
     }
 
     // setTimeout(function() {
