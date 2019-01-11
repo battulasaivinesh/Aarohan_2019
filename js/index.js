@@ -1,10 +1,6 @@
 //navbar
 
 $(document).ready(function() {
-  //loader
-  setTimeout(function() {
-    $("#loader").fadeOut("slow", "linear");
-  }, 4000);
 
   $(".hamburger").click(function() {
     $(this).toggleClass("is-active");

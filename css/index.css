@@ -763,29 +763,38 @@ p {
 
 /* contact us */
 .contact {
-  height: 100vh;
-  background-position: right;
-  background-repeat-x: no-repeat;
-  background-image: url(../img/contact-us.png);
-  background-size: auto 100vh;
+  width: 100vw;
+  height: auto;
+}
+
+.contact1 {
+  width: 100%;
+  position: absolute;
 }
 
 .contact_container {
   position: relative;
-  left: 50vw;
-  /* margin-left: 50%; */
-  padding-top: 18%;
+  left: 40vw;
+  top: 27vh;
+}
+
+.contact_container h1 {
+  font-size: 6rem;
+}
+
+.contact_container p {
+  font-size: 2.5rem;
+}
+
+.contact_container a {
+  font-size: 2rem;
 }
 
 @media screen and (max-width: 600px) {
-  .contact {
-    background-image: url(../img/Contact-Us-Mobile.png);
-  }
   .contact_container {
     position: relative;
-    padding-top: 64%;
-    padding-left: 5rem;
-    left: 0;
+    left: 35vw;
+    top: 11vh;
   }
   .arhn_logo {
     display: none;
