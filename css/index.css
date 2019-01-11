@@ -362,6 +362,13 @@ p {
 
 /* events */
 
+.postop {
+  top: -36vh;
+  left: 38vw;
+  line-height: 4rem;
+  position: absolute;
+}
+
 .event_box {
   padding: 10% 20%;
 }
