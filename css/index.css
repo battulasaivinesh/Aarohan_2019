@@ -352,17 +352,13 @@ p {
   padding-left: 24%;
 }
 
-.ml13 {
+.heading {
   font-size: 2em;
   text-transform: uppercase;
   letter-spacing: 0.5em;
   font-weight: 600;
 }
 
-.ml13 .letter {
-  display: inline-block;
-  line-height: 1em;
-}
 
 /* events */
 
@@ -429,6 +425,13 @@ p {
 
 .mjrattractions .events_txt {
   margin-top: 0;
+}
+
+.shiftplace {
+  position: absolute;
+  top: 34vh;
+  line-height: 4rem;
+  right: 5vw;
 }
 
 /* sponsors */
@@ -666,6 +669,21 @@ p {
   width: 30vw;
   margin: 7rem;
 }
+
+.ath_img {
+  width:20vw;
+  position: absolute;
+  left: 3vw;
+  top: -5vh;
+}
+
+@media screen and (max-width:600px) {
+  .ath_img {
+    width: 80vw;
+    position: relative;
+  }
+}
+
 
 /* contact us */
 .contact {
