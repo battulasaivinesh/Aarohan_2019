@@ -707,6 +707,21 @@ p {
   padding-top: 28%;
 }
 
+@media screen and (max-width: 600px) {
+  .contact{
+    background-image: url(../img/Contact-Us-Mobile.png);
+  }
+  .contact_container {
+    position: relative;
+    padding-top: 64%;
+    padding-left: 5rem;
+    left: 0;
+  }
+  .arhn_logo {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 600px) {
   .events_illst .image img {
     height: auto;
