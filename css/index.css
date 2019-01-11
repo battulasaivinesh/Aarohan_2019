@@ -464,6 +464,9 @@ p {
 .sponsors_content {
   height: 100%;
   background-color: white;
+  padding: 10%;
+  max-width: 2000px;
+  margin: 0;
 }
 
 .sponsors_box {
@@ -767,7 +770,7 @@ p {
   position: relative;
   left: 50vw;
   /* margin-left: 50%; */
-  padding-top: 28%;
+  padding-top: 18%;
 }
 
 @media screen and (max-width: 600px) {
