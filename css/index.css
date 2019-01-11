@@ -588,6 +588,20 @@ p {
 @media screen and (max-width: 600px) {
   /*landing */
 
+  .ml13 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    font-weight: 600;
+  }
+
+  .heading {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    font-weight: 600;
+  }
+
   .birdimg img {
     width: 90vw;
     height: auto;
@@ -632,8 +646,15 @@ p {
     bottom: 2rem;
   }
 
+  .ml13 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    font-weight: 600;
+  }
+
   .ath-heading {
-    font-size: 2rem;
+    font-size: 3rem;
     padding: 2rem;
     text-align: center;
   }
@@ -663,7 +684,8 @@ p {
   }
   .shiftplace {
     position: absolute;
-    top: 33vh;
+    width: 100vw;
+    top: 36vh;
     left: 3vw;
     text-align: center;
     line-height: 4rem;
@@ -671,7 +693,8 @@ p {
   }
 
   .postop {
-    top: 0;
+    /* top: 0; */
+    width: 100vw;
     left: 0;
     line-height: 4rem;
     position: absolute;
@@ -721,6 +744,13 @@ p {
 
   .fluidRight {
     left: 10vw !important;
+  }
+
+  .ml13 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    font-weight: 600;
   }
 }
 
