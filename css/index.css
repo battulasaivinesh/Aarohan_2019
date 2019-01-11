@@ -101,7 +101,7 @@ p {
   position: absolute;
   left: 40vw;
   font-weight: 600;
-  top: 75vh;
+  top: 68vh;
   text-align: center;
   width: 20vw;
   font-size: 3rem;
@@ -363,6 +363,7 @@ p {
 }
 
 .heading {
+  letter-spacing: 9px !important;
   font-size: 2em;
   text-transform: uppercase;
   letter-spacing: 0.5em;
@@ -384,9 +385,10 @@ p {
 /* events */
 
 .postop {
-  top: -36vh;
-  left: 38vw;
-  line-height: 4rem;
+  top: -29vh;
+  text-align: left;
+  left: 18vw;
+  line-height: 5rem;
   position: absolute;
 }
 
@@ -458,6 +460,7 @@ p {
 .shiftplace {
   position: absolute;
   top: 34vh;
+  text-align: left;
   line-height: 4rem;
   right: 5vw;
 }
@@ -602,7 +605,7 @@ p {
   .heading {
     font-size: 1.5em;
     text-transform: uppercase;
-    letter-spacing: 0.5em;
+    letter-spacing: 9px !important;
     font-weight: 600;
   }
 
@@ -650,6 +653,12 @@ p {
     bottom: 2rem;
   }
 
+  .sponsors_head {
+    font-size: 2.5rem;
+    text-align: center;
+    padding-bottom: 8rem;
+  }
+
   .ml13 {
     font-size: 1.5em;
     text-transform: uppercase;
@@ -658,6 +667,8 @@ p {
   }
 
   .ath-heading {
+    margin-bottom: 56px;
+    margin-top: 50px;
     font-size: 3rem;
     padding: 2rem;
     text-align: center;
@@ -689,14 +700,15 @@ p {
   .shiftplace {
     position: absolute;
     width: 100vw;
-    top: 36vh;
-    left: 3vw;
-    text-align: center;
+    top: 38vh;
+    left: 19vw;
+    text-align: left;
     line-height: 4rem;
     /* right: 5vw; */
   }
 
   .postop {
+    padding-left: 29px;
     /* top: 0; */
     width: 100vw;
     left: 0;
