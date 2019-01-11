@@ -653,6 +653,18 @@ p {
   margin: 7rem;
 }
 
+/* contact us */
+.contact {
+  height: 100vh;
+  background-image: url('../img/contact-us.png');
+  background-size: 100vw 100vh;
+}
+
+.contact_container {
+  margin-left: 50%;
+    padding-top: 21%;
+}
+
 @media screen and (min-width: 600px) {
   .events_illst .image img {
     height: auto;
