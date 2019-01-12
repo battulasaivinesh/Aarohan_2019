@@ -476,6 +476,12 @@ p {
   .image-info p {
     font-size: 1.75rem;
   }
+  .about__info-text {
+    margin-left: 4rem;
+  }
+  .image-info {
+    margin-left: 4rem;
+  }
 }
 
 
@@ -533,6 +539,14 @@ p {
   font-size: 2rem;
 }
 
+.workshop_heading {
+  font-size: 6rem;
+  text-align: center;
+  padding-top: 15rem;
+  padding-bottom: 10rem;
+}
+
+
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
@@ -549,6 +563,16 @@ p {
     transform: rotate(359deg);
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .events_txt{
+    margin-left: 4rem;
+  }
+  .workshop_heading{
+    font-size: 4.5rem;
+  }
+}
+
 
 /* major attractions */
 .mjrattractions {
