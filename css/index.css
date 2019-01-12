@@ -319,10 +319,12 @@ p {
 
 @media only screen and (max-width:600px) {
   .patron {
-    right:7vw;
+    right:19vw;
+    top:2rem;
   }
   .patron img {
-    width: 88vw;
+    width: 70vw;
+    height: auto;
   }
 }
 
@@ -342,10 +344,12 @@ p {
 
 @media only screen and (max-width:600px) {
   .patron-black {
-    right:7vw;
+    right:19vw;
+    top:2rem;
   }
   .patron-black img {
-    width: 88vw;
+    width: 70vw;
+    height: auto;
   }
 }
 
