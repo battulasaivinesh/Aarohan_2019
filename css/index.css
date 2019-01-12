@@ -49,6 +49,7 @@ p {
   position: fixed;
   left: 4rem;
   bottom: 4rem;
+  text-align: center;
 }
 
 .social_links i {
@@ -302,6 +303,53 @@ p {
   animation-iteration-count: infinite;
   animation-duration: 3s; */
 }
+
+.patron {
+  position: absolute;
+  width: auto;
+  right: 7vw;
+  top: 4rem;
+  text-align: right;
+}
+
+.patron img {
+  width: auto;
+  height: 67.5px;
+}
+
+@media only screen and (max-width:600px) {
+  .patron {
+    right:7vw;
+  }
+  .patron img {
+    width: 88vw;
+  }
+}
+
+
+.patron-black {
+  position: absolute;
+  width: auto;
+  right: 7vw;
+  top: 4rem;
+  text-align: right;
+}
+
+.patron-black img {
+  width: auto;
+  height: 67.5px;
+}
+
+@media only screen and (max-width:600px) {
+  .patron-black {
+    right:7vw;
+  }
+  .patron-black img {
+    width: 88vw;
+  }
+}
+
+
 
 .ui-resizable-e {
   width: 25px !important;

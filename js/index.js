@@ -228,9 +228,11 @@ $win
     ];
 
     if (m / w > 0.2 && m / w < 0.5) {
+      $(".patron-black").css("opacity","0");
       rgb2 = [200, 200, 200];
     } else if (m / w > 0.5 && m / w < 0.7) {
       rgb2 = [76.5, 76.5, 76.5];
+      $(".patron-black").css("opacity","1");
     }
 
     var scroll = $(window).scrollTop();
