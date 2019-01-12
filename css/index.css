@@ -71,6 +71,8 @@ p {
 }
 
 
+
+
 /* navbar new */
 .overlay {
   height: 100%;
@@ -145,6 +147,18 @@ p {
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+.black-menu .line{
+  background-color: black;
+}
+
+.white-menu .line{
+  background-color: white;
+}
+
+.black-menu2 .line{
+  background-color: black;
 }
 
 .hamburger:hover {

@@ -86,26 +86,31 @@ new ScrollMagic.Scene({
 
 
 
-  new ScrollMagic.Scene({
-    triggerElement: "#trigger2",
-    offset: "-100%"
-  })
+new ScrollMagic.Scene({triggerElement: "#trigger2",})
   .setClassToggle("#social_icons", "black") // add class toggle
-  .addIndicators() // add indicators (requires plugin)
+  .addTo(controller);
+
+  new ScrollMagic.Scene({triggerElement: "#trigger2",})
+  .setClassToggle("#hamburger-11", "black-menu") // add class toggle
   .addTo(controller);
 
 
-  new ScrollMagic.Scene({triggerElement: "#trigger3"})
+new ScrollMagic.Scene({ triggerElement: "#trigger3" })
   .setClassToggle("#social_icons", "white") // add class toggle
-  .addIndicators() // add indicators (requires plugin)
   .addTo(controller);
 
-  new ScrollMagic.Scene({triggerElement: "#trigger4"})
+  new ScrollMagic.Scene({triggerElement: "#trigger3",})
+  .setClassToggle("#hamburger-11", "white-menu") // add class toggle
+  .addTo(controller);
+
+new ScrollMagic.Scene({ triggerElement: "#trigger4" })
   .setClassToggle("#social_icons", "black2") // add class toggle
-  .addIndicators() // add indicators (requires plugin)
   .addTo(controller);
 
-//   .on("end", callback);
+  new ScrollMagic.Scene({triggerElement: "#trigger4",})
+  .setClassToggle("#hamburger-11", "black-menu2") // add class toggle
+  .addTo(controller);
+
 
 // closing function for menu options
 
