@@ -382,7 +382,26 @@ p {
   line-height: 1em;
 }
 
+
+@media only screen and (max-width:600px) {
+  .dates {
+    top: 55vh;
+  }
+  .section_wrap {
+    padding-bottom: 22vh;
+  }
+  .image-info p {
+    font-size: 1.75rem;
+  }
+}
+
+
+
 /* events */
+
+.events {
+  color:white;
+}
 
 .postop {
   top: -29vh;
@@ -598,7 +617,7 @@ p {
   .ml13 {
     font-size: 1.5em;
     text-transform: uppercase;
-    letter-spacing: 0.5em;
+    letter-spacing: 0;
     font-weight: 600;
   }
 
@@ -765,7 +784,7 @@ p {
   .ml13 {
     font-size: 1.5em;
     text-transform: uppercase;
-    letter-spacing: 0.5em;
+    letter-spacing: 0;
     font-weight: 600;
   }
 }
