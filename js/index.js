@@ -1,13 +1,13 @@
 //navbar
 
-$(document).ready(function() {
-  $(".hamburger").click(function() {
+$(document).ready(function () {
+  $(".hamburger").click(function () {
     $(this).toggleClass("is-active");
   });
 });
 
 //txt animation
-$(".ml13").each(function() {
+$(".ml13").each(function () {
   $(this).html(
     $(this)
       .text()
@@ -27,7 +27,7 @@ function callback() {
     opacity: [0, 1],
     easing: "easeOutExpo",
     duration: 1400,
-    delay: function(el, i) {
+    delay: function (el, i) {
       return 30 * i;
     }
   });
@@ -53,7 +53,7 @@ function reverse_callback() {
     opacity: [1, 0],
     easing: "easeInExpo",
     duration: 800,
-    delay: function(el, i) {
+    delay: function (el, i) {
       return 30 * i;
     }
   });
@@ -69,7 +69,7 @@ new ScrollMagic.Scene({
   // .setPin("#about-wrapper")
   //   .addIndicRators({ name: "random" })
   .addTo(controller)
-  .on("start end", function(e) {
+  .on("start end", function (e) {
     if (
       e.type == "end" &&
       e.target.controller().info("scrollDirection") == "FORWARD"
@@ -84,34 +84,54 @@ new ScrollMagic.Scene({
     }
   });
 
-  
+
+
+  new ScrollMagic.Scene({
+    triggerElement: "#trigger2",
+    offset: "-100%"
+  })
+  .setClassToggle("#social_icons", "black") // add class toggle
+  .addIndicators() // add indicators (requires plugin)
+  .addTo(controller);
+
+
+  new ScrollMagic.Scene({triggerElement: "#trigger3"})
+  .setClassToggle("#social_icons", "white") // add class toggle
+  .addIndicators() // add indicators (requires plugin)
+  .addTo(controller);
+
+  new ScrollMagic.Scene({triggerElement: "#trigger4"})
+  .setClassToggle("#social_icons", "black2") // add class toggle
+  .addIndicators() // add indicators (requires plugin)
+  .addTo(controller);
+
 //   .on("end", callback);
 
 // closing function for menu options
 
 var menuopt = $(".overlay-content a");
-menuopt.click(function() {
+menuopt.click(function () {
   $(".hamburger").toggleClass("is-active");
 });
 
 // for menu closing
-$(document).ready(function() {
-  $("#menu").click(function() {
+$(document).ready(function () {
+  $("#menu").click(function () {
     if (document.getElementById("myNav").style.width == "100%") {
       document.getElementById("myNav").style.width = "0%";
     } else {
       document.getElementById("myNav").style.width = "100%";
     }
   });
-  $(".overlay-content a").click(function() {
+  $(".overlay-content a").click(function () {
     document.getElementById("myNav").style.width = "0%";
   });
 });
 
 //
 
-$(document).ready(function() {
-  $("#open").click(function() {
+$(document).ready(function () {
+  $("#open").click(function () {
     $("#root").animate(
       {
         marginTop: "10vh",
@@ -131,8 +151,8 @@ $(document).ready(function() {
   });
 });
 
-$(document).ready(function() {
-  $(".closebtn").click(function() {
+$(document).ready(function () {
+  $(".closebtn").click(function () {
     $("#root").animate(
       {
         marginLeft: 0,
@@ -151,15 +171,15 @@ $(document).ready(function() {
     );
   });
 
-  $(document).ready(function() {
-    $(".closebtn").click(function() {
+  $(document).ready(function () {
+    $(".closebtn").click(function () {
       $("#a1").fadeOut(700, "swing");
       $("#a2").fadeOut(700, "swing");
       $("#a3").fadeOut(700, "swing");
     });
   });
-  $(document).ready(function() {
-    $("#open").click(function() {
+  $(document).ready(function () {
+    $("#open").click(function () {
       $("#a1").fadeIn();
       $("#a2").fadeIn();
       $("#a3").fadeIn();
@@ -173,7 +193,7 @@ var $win = $(window),
   w = 0,
   h = 0,
   rgb = [],
-  getWidth = function() {
+  getWidth = function () {
     w = $win.width();
   };
 
@@ -182,7 +202,7 @@ var k = 0;
 //background change function
 $win
   .resize(getWidth)
-  .mousemove(function(e) {
+  .mousemove(function (e) {
     var m;
 
     var color1 = [16, 36, 66];
@@ -214,9 +234,6 @@ $win
       $(".dates").css("color", "rgb(" + rgb2.join(",") + ")");
       $(".line").css("background-color", "rgb(" + rgb2.join(",") + ")");
       $(".fa-icon").css("color", "rgb(" + rgb2.join(",") + ")");
-    } else {
-      $(".fa-icon").css("color", "#ffffff");
-      $(".line").css("background-color", "#ffffff");
     }
 
     // setTimeout(function() {
@@ -238,23 +255,23 @@ $win
   .resize();
 
 //objects change function
-$(function() {
+$(function () {
   var $win = $(window),
     w = 0,
     h = 0,
     opacity = 1,
-    getWidth = function() {
+    getWidth = function () {
       w = $win.width();
       h = $win.height();
     };
 
-  $win.mousemove(function(e) {
+  $win.mousemove(function (e) {
     $(".view-after").width(e.pageX);
   });
 });
 
 //dragable
-$(function() {
+$(function () {
   $("#my_resizable").resizable({
     handles: "e"
   });

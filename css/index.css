@@ -41,6 +41,9 @@ p {
 }
 
 /* social icons */
+
+
+
 .social_links {
   z-index: 5;
   position: fixed;
@@ -50,9 +53,23 @@ p {
 
 .social_links i {
   margin-top: 1.5rem;
-  color: white;
   font-size: 2rem;
 }
+
+
+
+.black i {
+  color: black;
+}
+
+.white i {
+  color:white;
+}
+
+.black2 i {
+  color: black;
+}
+
 
 /* navbar new */
 .overlay {
@@ -486,7 +503,7 @@ p {
 
 /* sponsors */
 .sponsors_head {
-  font-size: 4rem;
+  font-size: 5rem;
   text-align: center;
   padding-bottom: 8rem;
 }
