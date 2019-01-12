@@ -83,6 +83,8 @@ new ScrollMagic.Scene({
       reverse_callback();
     }
   });
+
+  
 //   .on("end", callback);
 
 // closing function for menu options
