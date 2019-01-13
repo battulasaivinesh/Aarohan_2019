@@ -3,8 +3,9 @@ body {
   background: #818181;
 }
 
-h1 {
+h1,h2,h3 {
   font-family: "Work Sans", sans-serif;
+  font-weight: 700;
 }
 
 p {
@@ -120,7 +121,7 @@ p {
 .dates {
   position: absolute;
   left: 40vw;
-  font-weight: 600;
+  font-weight: 800;
   top: 68vh;
   text-align: center;
   width: 20vw;
@@ -637,9 +638,10 @@ p {
 }
 
 .content h3 {
+  font-family: 'Work Sans', sans-serif;
   padding-top: 1.2rem;
   text-align: center;
-  font-weight: bolder;
+  font-weight: 700;
   color: rgba(15, 15, 15, 0.6);
 }
 
