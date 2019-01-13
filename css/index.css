@@ -9,7 +9,15 @@ h1,h2,h3 {
 }
 
 p {
-  font-family: "Bitter", serif;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+a {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  opacity: 0.8;
 }
 
 #root {
@@ -94,7 +102,6 @@ p {
   top: 15%;
   width: 100%;
   text-align: center;
-  margin-top: 30px;
 }
 
 .overlay a {
@@ -104,6 +111,8 @@ p {
   color: #818181;
   display: block;
   transition: 0.3s;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
 }
 
 .overlay a:hover,
@@ -451,14 +460,14 @@ p {
   font-size: 2em;
   text-transform: uppercase;
   letter-spacing: 0.5em;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .ml13 {
   font-size: 2em;
   text-transform: uppercase;
   letter-spacing: 0.5em;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .ml13 .letter {
@@ -661,7 +670,6 @@ p {
   margin: 0;
   padding: 0.25rem 0;
   text-align: center;
-  font-weight: bolder;
   color: rgba(15, 15, 15, 0.4);
 }
 
@@ -727,14 +735,14 @@ p {
     font-size: 1.5em;
     text-transform: uppercase;
     letter-spacing: 0;
-    font-weight: 600;
+    font-weight: 700;
   }
 
   .heading {
     font-size: 1.5em;
     text-transform: uppercase;
     letter-spacing: 9px !important;
-    font-weight: 600;
+    font-weight: 700;
   }
 
   .birdimg img {
@@ -791,7 +799,7 @@ p {
     font-size: 1.5em;
     text-transform: uppercase;
     letter-spacing: 0.5em;
-    font-weight: 600;
+    font-weight: 700;
   }
 
   .ath-heading {
@@ -808,7 +816,7 @@ p {
     top: 60vh;
     text-align: center;
     width: 100vw;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 3rem;
     font-family: "Work Sans", sans-serif;
   }
@@ -894,7 +902,7 @@ p {
     font-size: 1.5em;
     text-transform: uppercase;
     letter-spacing: 0;
-    font-weight: 600;
+    font-weight: 700;
   }
 }
 
@@ -961,6 +969,15 @@ p {
 
 .contact-container a {
   font-size: 2rem;
+}
+
+.back {
+
+  height: 100vh;
+  bottom: 5.2vh;
+  left: 5vw;
+  position: relative;
+
 }
 
 .wdct {
