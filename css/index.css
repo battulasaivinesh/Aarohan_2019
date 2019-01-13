@@ -789,6 +789,11 @@ a {
 }
 
 @media screen and (max-width: 600px) {
+
+  .ath-box {
+    margin-left: 0;
+  }
+
   .social_links {
     left: 2rem;
     bottom: 2rem;
