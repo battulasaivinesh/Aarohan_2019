@@ -13,6 +13,17 @@
 
         gtag('config', 'UA-132328529-1');
     </script>
+    <!--     push notifications -->
+    <link rel="manifest" href="/manifest.json" />
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+        var OneSignal = window.OneSignal || [];
+        OneSignal.push(function () {
+            OneSignal.init({
+                appId: "515c9bca-aa40-41ba-a19a-116106aff753",
+            });
+        });
+    </script>
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1.0">
@@ -106,13 +117,19 @@
     <!-- icon -->
     <link rel="icon" href="./img/Aarohan-Tab-Logo" type="image/gif" sizes="16x16">
 
+    <style>
+        #onesignal-popover-container {
+  z-index: 55;
+}
+
+    </style>
 
 </head>
 
 <body>
 
-    <div class="cursor-wrapper" style="transform: matrix(1, 0, 0, 1, 966, 167); opacity: 1;">
-        <div class="cursor"></div>
+    <div class="cursor-wrapper" style="transform: matrix(1, 0, 0, 1, 966, 167); opacity: 1;z-index: 9999">
+        <div class="cursor" style="z-index:9999"></div>
     </div>
 
     <!-- loader -->
@@ -1010,7 +1027,7 @@
                                 
                     </div> -->
                 <div id="contactus" class="contact" style="position: relative">
-                    <img class="back" src="img/contact3_1.png" >
+                    <img class="back" src="img/contact3_1.png">
                     <img class="boy" src="img/contact1.png" alt="" srcset="">
                     <img class="girl" src="img/contact2.png" alt="" srcset="">
                     <div class="contact-container">

@@ -24,6 +24,10 @@ a {
   position: relative;
 }
 
+#onesignal-popover-container {
+  z-index: 5555 !important;
+}
+
 /* loader */
 .loader_img {
   width: 25vw;
