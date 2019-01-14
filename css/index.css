@@ -550,15 +550,22 @@ a {
 }
 
 .events_txt p {
+  opacity: 0.9;
   font-size: 2rem;
 }
 
 .workshop_heading {
   font-size: 6rem;
   text-align: center;
-  padding-top: 15rem;
-  padding-bottom: 10rem;
+  padding-top: 20rem;
+  padding-bottom: 5rem;
 }
+
+.workshop {
+  padding-top: 20rem;
+  padding-bottom: 5rem;
+}
+
 
 
 @keyframes rotate {
@@ -590,7 +597,7 @@ a {
 
 /* major attractions */
 .mjrattractions {
-  padding-bottom: 10%;
+  padding-bottom: 15%;
 }
 
 .mjrattractions .events_txt {
@@ -674,7 +681,6 @@ a {
   margin: 0;
   padding: 0.25rem 0;
   text-align: center;
-  color: rgba(15, 15, 15, 0.4);
 }
 
 @media only screen and (max-width: 768px) {
@@ -959,7 +965,7 @@ a {
 
 /* contact us */
 .contact {
-  margin-top: 10vh;
+  margin-top: 20vh;
 }
 
 .contact-container {
