@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Exquizzit</title>
+	<meta name="author" content="Web, Design and Creative Team" />
+	<meta name="description" content="Aarohan Events" />
+	<meta name="keywords"  content="Aarohan" />
+	<meta name="Resource-type" content="Document" />
+
+	
+	<link rel="stylesheet" type="text/css" href="src/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	.section{
+		background-size: cover;
+	}
+	.slide{
+		background-size: cover;
+	}
+
+	/* Defining each section background and styles
+	* --------------------------------------- */
+	#event_name h1{
+		top: 0%;
+		position: relative;
+	}
+	
+	#event_name{
+		
+		padding: 0% 0 0 0;
+	}
+	
+	/*Adding background for the slides
+	* --------------------------------------- */
+	
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+	</style>
+</head>
+<body>
+<div id="fullpage">
+	<div class="section fp-auto-height-responsive" id="event_name">
+		<div class="slide fp-auto-height-responsive" id="slide2" style="background-color: rgb(26, 117, 255);">
+			<div class="holder container fp-auto-height-responsive"  id="scrollbar-section">
+				<div class="row">
+					<div class="col poster-holder">
+						<div class="poster">
+							<img id="poster" height="680" src="imgs/exquizzit.jpg">
+						</div>
+					</div>
+					<div class="col bio fp-auto-height-responsive">
+						<div class="row title">
+							Exquizzit
+						</div>
+						<div class="row descr">
+							You can't simply be doing "nothing". Everything you do does count in some queer insane way or the other. Everything: be it slumping on to the couch, be it lousily perching over the 42" led screen, be it bumping wrappers at a stadium, be it drooling over the hot guy in the silver screen or be it fantasizing the kick of tomorrowland, it does count. Speaking the least of it, in "EXQUIZZIT" this 'everything', seasoned with a bit of retentiveness, does wonders. Don't be surprised to see your interests and drawing room entertainment get you aces in this round of "EXQUIZZIT"
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="topbar">
+	<a href="https://arhn.co.in/"><img id="icon" src="imgs/aarohan.icon.png"></a>
+	<button onclick="goBack()" class="btn btn-secondary" id="backbutton">Back</button>
+</div>
+<script type="text/javascript">
+	function goBack() {
+  window.history.back();
+}
+</script>
+<script type="text/javascript" src="src/fullpage.js"></script>
+<script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        verticalCentered: false,
+        scrollOverflow: true,
+        scrollBar: false,
+        autoScrolling: true,
+        css3: true,
+        slidesNavigation: true,
+        normalScrollElements: '#scrollbar-section',
+  //scrollOverflowOptions: {
+    //scrollbars: 'custom'
+  //},
+  touchSensitivity: 25,
+  normalScrollElementTouchThreshold: 3
+    });
+</script>
+</body>
+</html>

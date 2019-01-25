@@ -17,7 +17,7 @@ p {
 a {
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 #root {
@@ -71,7 +71,6 @@ a {
 }
 
 
-
 .black i {
   color: black;
 }
@@ -84,7 +83,67 @@ a {
   color: black;
 }
 
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
 
+.chi-reg{
+  z-index: 5;
+  position: fixed;
+  right: 0rem;
+  bottom: -0.5rem;
+  width:10%;
+  /* -webkit-animation: bounce 3s infinite ease-in-out;
+  -o-animation: bounce 3s infinite ease-in-out;
+  -ms-animation: bounce 3s infinite ease-in-out; 
+  -moz-animation: bounce 3s infinite ease-in-out;  */
+}
+
+
+@media only screen and (max-width: 600px) {
+  .chi-reg {
+    z-index: 5;
+    position: fixed;
+    right: 0rem;
+    bottom: -0.5rem;
+    width:30%;
+    /* -webkit-animation: bounce 3s infinite ease-in-out;
+    -o-animation: bounce 3s infinite ease-in-out;
+    -ms-animation: bounce 3s infinite ease-in-out; 
+    -moz-animation: bounce 3s infinite ease-in-out;  */
+  }
+}
+
+
+@keyframes do-levitation {
+  0% {
+    transform: translate(0em, 0em);
+  }
+  100% {
+    transform: translate(5em, 5em);
+  }
+}
+
+.levitate {
+  animation: do-levitation 3s alternate ease-in-out;
+  animation-iteration-count: 2;
+  animation-delay: 3s;
+}
+
+/* @-webkit-keyframes bounce {
+  0% { transform: translateY(-5px)  }
+  50% { transform: translateY(10px) }
+  100% { transform: translateY(-5px) }
+}
+
+@keyframes bounce {
+  0% { transform: translateY(-5px)  }
+  50% { transform: translateY(10px) }
+  100% { transform: translateY(-5px) }
+} */
 
 
 /* navbar new */

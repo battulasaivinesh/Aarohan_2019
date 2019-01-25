@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Strategist</title>
+	<meta name="author" content="Web, Design and Creative Team" />
+	<meta name="description" content="Aarohan Events" />
+	<meta name="keywords"  content="Aarohan" />
+	<meta name="Resource-type" content="Document" />
+	
+
+	<link rel="stylesheet" type="text/css" href="src/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	.section{
+		background-size: cover;
+	}
+	.slide{
+		background-size: cover;
+	}
+
+	/* Defining each section background and styles
+	* --------------------------------------- */
+	#event_name h1{
+		top: 0%;
+		position: relative;
+	}
+	
+	#event_name{
+		
+		padding: 0% 0 0 0;
+	}
+	
+	/*Adding background for the slides
+	* --------------------------------------- */
+	
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+	</style>
+</head>
+<body>
+<div id="fullpage">
+	<div class="section fp-auto-height-responsive" id="event_name">
+		<div class="slide fp-auto-height-responsive" id="slide2" style="background-color: rgb(255, 71, 26);">
+			<div class="holder container fp-auto-height-responsive"  id="scrollbar-section">
+				<div class="row">
+					<div class="col poster-holder">
+						<div class="poster">
+							<img id="poster" height="680" src="imgs/journo-det.jpg">
+						</div>
+					</div>
+					<div class="col bio">
+						<div class="row title">
+							Journo-<br>Detective
+						</div>
+						<div class="row descr">
+							Team up and explore the nooks and corners of the mysterious detective world which goes hand in hand with a series of brain teasing yet fun filled events. Get ready to witness a perfect blend of thrilling treasure hunt and master your detective skills.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slide fp-auto-height-responsive" id="slide2" style="background-color: rgb(172, 0, 230);">
+			<div class="holder container fp-auto-height-responsive"  id="scrollbar-section">
+				<div class="row">
+					<div class="col poster-holder">
+						<div class="poster">
+							<img id="poster" height="680" src="imgs/bab.jpg">
+						</div>
+					</div>
+					<div class="col bio">
+						<div class="row title">
+							Be A<br>
+							Billionaire
+						</div>
+						<div class="row descr">
+							“In a world that's changing really quickly, the only strategy that is guaranteed to fail is not taking risks.”- Mark Zuckerberg. 
+Start from scratch and strive for success. Trust your observation abilities and bid par excellence. Risk it; go for it and battle to Be a Billionaire. 
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slide fp-auto-height-responsive" id="slide2" style="background-color: orange;">
+			<div class="holder container fp-auto-height-responsive"  id="scrollbar-section">
+				<div class="row">
+					<div class="col poster-holder">
+						<div class="poster">
+							<img id="poster" height="680" src="imgs/stockhastic.jpg">
+						</div>
+					</div>
+					<div class="col bio">
+						<div class="row title">
+							Stockhastic
+						</div>
+						<div class="row descr">
+							Emotions are your worst enemy in the stock market. Hold on to your nerves and emotions going through the event and be smart and precise with your decisions before stepping into the stock exchange world, where buying and selling the best stocks at the correct time would make you the ‘Wolf of The Wallstreet’.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slide fp-auto-height-responsive" id="slide2" style="background-color: rgb(179, 179, 0);">
+			<div class="holder container fp-auto-height-responsive"  id="scrollbar-section">
+				<div class="row">
+					<div class="col poster-holder">
+						<div class="poster">
+							<img id="poster" height="680" src="imgs/gor2.jpg">
+						</div>
+					</div>
+					<div class="col bio">
+						<div class="row title">
+							Game of<br>
+							Recruitment
+						</div>
+						<div class="row descr">
+							Recruitment processes have always been tough, regressive and brain storming. Experience a perfectly arrayed real recruitment process that gives a competitive environment for the people with great control over their nerves.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="topbar">
+	<a href="https://arhn.co.in/"><img id="icon" src="imgs/aarohan.icon.png"></a>
+	<button onclick="goBack()" class="btn btn-secondary" id="backbutton">Back</button>
+</div>
+<script type="text/javascript">
+	function goBack() {
+  window.history.back();
+}
+</script>
+<script type="text/javascript" src="src/fullpage.js"></script>
+<script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        verticalCentered: false,
+        scrollOverflow: true,
+        scrollBar: false,
+        autoScrolling: true,
+        css3: true,
+        slidesNavigation: true,
+        normalScrollElements: '#scrollbar-section',
+  //scrollOverflowOptions: {
+    //scrollbars: 'custom'
+  //},
+  touchSensitivity: 25,
+  normalScrollElementTouchThreshold: 3
+    });
+</script>
+</body>
+</html>

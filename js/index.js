@@ -6,6 +6,7 @@ $(document).ready(function () {
   });
 });
 
+
 //txt animation
 $(".ml13").each(function () {
   $(this).html(

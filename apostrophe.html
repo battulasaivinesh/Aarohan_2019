@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Apostrophe</title>
+	<meta name="author" content="Web, Design and Creative Team" />
+	<meta name="description" content="Aarohan Events" />
+	<meta name="keywords"  content="Aarohan" />
+	<meta name="Resource-type" content="Document" />
+	
+
+	<link rel="stylesheet" type="text/css" href="src/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	.section{
+		background-size: cover;
+	}
+	.slide{
+		background-size: cover;
+	}
+
+	/* Defining each section background and styles
+	* --------------------------------------- */
+	#event_name h1{
+		top: 0%;
+		position: relative;
+	}
+	
+	#event_name{
+		
+		padding: 0% 0 0 0;
+	}
+	
+	/*Adding background for the slides
+	* --------------------------------------- */
+	
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+	</style>
+</head>
+<body>
+<div id="fullpage">
+	<div class="section fp-auto-height-responsive" id="event_name">
+		<div class="slide fp-auto-height-responsive" id="slide2" style="background-color: rgb(92, 214, 92);">
+			<div class="holder container fp-auto-height-responsive"  id="scrollbar-section">
+				<div class="row">
+					<div class="col poster-holder">
+						<div class="poster">
+							<img id="poster" height="680" src="imgs/abhivyakti.jpg">
+						</div>
+					</div>
+					<div class="col bio">
+						<div class="row title">
+							Abhivyakti
+						</div>
+						<div class="row descr">
+							If you have always had a technically innovative idea which you believe can possibly change the picture of the world or if you're extremely passionate about a particular subject of science and want to undertake extensive research but haven't yet found a platform to 'abhivyakt' yourself, your wait is over. Pen down your innovation/research and we'll bring recognition to you.
+
+'Abhivyakti' is the technical paper presentation event of Aarohan, where science and innovation enthusiasts come together and present their ideas in the most scientific fashion and the winning entries are IEEE certified.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slide fp-auto-height-responsive" id="slide2" style="background-color: purple;">
+			<div class="holder container fp-auto-height-responsive"  id="scrollbar-section">
+				<div class="row">
+					<div class="col poster-holder">
+						<div class="poster">
+							<img id="poster" height="680" src="imgs/conjecture.jpg">
+						</div>
+					</div>
+					<div class="col bio">
+						<div class="row title">
+							Conjecture
+						</div>
+						<div class="row descr">
+							Sir Isaas Newton has contributed in more areas of science that we know or probably imagined, similar to many other scientist Unlike Nikola Tesla everyone has the oppurtunity to show their experimental skills and get applauded for it. So, get ready to discover a hell lot of interesting facts about the world of science.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="topbar">
+	<a href="https://arhn.co.in/"><img id="icon" src="imgs/aarohan.icon.png"></a>
+	<button onclick="goBack()" class="btn btn-secondary" id="backbutton">Back</button>
+</div>
+<script type="text/javascript">
+	function goBack() {
+  window.history.back();
+}
+</script>
+<script type="text/javascript" src="src/fullpage.js"></script>
+<script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        verticalCentered: false,
+        scrollOverflow: true,
+        scrollBar: false,
+        autoScrolling: true,
+        css3: true,
+        slidesNavigation: true,
+        normalScrollElements: '#scrollbar-section',
+  //scrollOverflowOptions: {
+    //scrollbars: 'custom'
+  //},
+  touchSensitivity: 25,
+  normalScrollElementTouchThreshold: 3
+    });
+</script>
+</body>
+</html>

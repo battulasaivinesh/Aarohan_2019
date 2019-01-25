@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>BattleofBytes</title>
+	<meta name="author" content="Web, Design and Creative Team" />
+	<meta name="description" content="Aarohan Events" />
+	<meta name="keywords"  content="Aarohan" />
+	<meta name="Resource-type" content="Document" />
+	
+
+	<link rel="stylesheet" type="text/css" href="src/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	.section{
+		background-size: cover;
+	}
+	.slide{
+		background-size: cover;
+	}
+
+	/* Defining each section background and styles
+	* --------------------------------------- */
+	#event_name h1{
+		top: 0%;
+		position: relative;
+	}
+	
+	#event_name{
+		
+		padding: 0% 0 0 0;
+	}
+	
+	/*Adding background for the slides
+	* --------------------------------------- */
+	
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+	</style>
+</head>
+<body>
+<div id="fullpage">
+	<div class="section fp-auto-height-responsive" id="event_name">
+		<div class="slide fp-auto-height-responsive" id="slide2" style="background-color: rgb(179, 179, 0);">
+			<div class="holder container fp-auto-height-responsive"  id="scrollbar-section">
+				<div class="row">
+					<div class="col poster-holder">
+						<div class="poster">
+							<img id="poster" width="550" class="p0h" src="imgs/khulamaidan.jpg">
+						</div>
+					</div>
+					<div class="col bio sp">
+						<div class="row title">
+							Khula Maidan
+						</div>
+						<div class="row descr">
+							 Khula Maidaan is an event based on technical and creative skills. The participants will have to design products based on the topics given and come up with plans to commercialize their products in the real world market. They may or may not use technical tools in doing so.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slide fp-auto-height-responsive" id="slide2" style="background-color: rgb(0, 89, 179);">
+			<div class="holder container fp-auto-height-responsive"  id="scrollbar-section">
+				<div class="row">
+					<div class="col poster-holder">
+						<div class="poster">
+							<img id="poster" class="p0h" width="550" src="imgs/inquest.jpg">
+						</div>
+					</div>
+					<div class="col bio sp">
+						<div class="row title">
+							Inquest
+						</div>
+						<div class="row descr">
+							Inquest is one of the most exciting and brainstorming event of Aarohan.The online quiz  revolves around a series of twisted questions and puzzles.With a high participation number  Inquest stands as the most exciting and fun virtual event of Aarohan.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slide fp-auto-height-responsive" id="slide2" style="background-color: purple;">
+			<div class="holder container fp-auto-height-responsive"  id="scrollbar-section">
+				<div class="row">
+					<div class="col poster-holder">
+						<div class="poster">
+							<img id="poster" height="680" src="imgs/bob.jpg">
+						</div>
+					</div>
+					<div class="col bio">
+						<div class="row title">
+							Trivio
+						</div>
+						<div class="row descr">
+							Trivio is a new age game. The trivio is a fun and challenging online quiz where the participants are restricted to a  given amount of time for solving questions. Each question has four options and one  correct answer, on giving the correct answer within the limited time a more challenging  question comes up. Wrong answer or no answer leads to elimination of the participant.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slide fp-auto-height-responsive" id="slide2" style="background-color: rgb(0, 179, 179);">
+			<div class="holder container fp-auto-height-responsive"  id="scrollbar-section">
+				<div class="row">
+					<div class="col poster-holder">
+						<div class="poster">
+							<img id="poster" height="680" src="imgs/decathlon.jpg">
+						</div>
+					</div>
+					<div class="col bio">
+						<div class="row title">
+							Decathlon
+						</div>
+						<div class="row descr">
+							Team AAROHAN presents to you the coding module - DECATHLON!<br>
+The smart coders out there, whose brains crave for some bugging and debugging, and the will gets smoothened along the long lines of codes, AAROHAN 2019 has provided you a platform to excel and prove your worth.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="topbar">
+	<a href="https://arhn.co.in/"><img id="icon" src="imgs/aarohan.icon.png"></a>
+	<button onclick="goBack()" class="btn btn-secondary" id="backbutton">Back</button>
+</div>
+<script type="text/javascript">
+	function goBack() {
+  window.history.back();
+}
+</script>
+<script type="text/javascript" src="src/fullpage.js"></script>
+<script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        verticalCentered: false,
+        scrollOverflow: true,
+        scrollBar: false,
+        autoScrolling: true,
+        css3: true,
+        slidesNavigation: true,
+        normalScrollElements: '#scrollbar-section',
+  //scrollOverflowOptions: {
+    //scrollbars: 'custom'
+  //},
+  touchSensitivity: 25,
+  normalScrollElementTouchThreshold: 3
+    });
+</script>
+</body>
+</html>
