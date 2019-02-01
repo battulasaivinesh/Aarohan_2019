@@ -3,7 +3,9 @@ body {
   background: #818181;
 }
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
   font-family: "Work Sans", sans-serif;
   font-weight: 700;
 }
@@ -55,8 +57,6 @@ a {
 
 /* social icons */
 
-
-
 .social_links {
   z-index: 5;
   position: fixed;
@@ -70,13 +70,12 @@ a {
   font-size: 2rem;
 }
 
-
 .black i {
   color: black;
 }
 
 .white i {
-  color:white;
+  color: white;
 }
 
 .black2 i {
@@ -90,18 +89,17 @@ a {
   -o-transition: none !important;
 }
 
-.chi-reg{
+.chi-reg {
   z-index: 5;
   position: fixed;
   right: 0rem;
   bottom: -0.5rem;
-  width:10%;
+  width: 10%;
   /* -webkit-animation: bounce 3s infinite ease-in-out;
   -o-animation: bounce 3s infinite ease-in-out;
   -ms-animation: bounce 3s infinite ease-in-out; 
   -moz-animation: bounce 3s infinite ease-in-out;  */
 }
-
 
 @media only screen and (max-width: 600px) {
   .chi-reg {
@@ -109,14 +107,13 @@ a {
     position: fixed;
     right: 0rem;
     bottom: -0.5rem;
-    width:30%;
+    width: 30%;
     /* -webkit-animation: bounce 3s infinite ease-in-out;
     -o-animation: bounce 3s infinite ease-in-out;
     -ms-animation: bounce 3s infinite ease-in-out; 
     -moz-animation: bounce 3s infinite ease-in-out;  */
   }
 }
-
 
 @keyframes do-levitation {
   0% {
@@ -144,7 +141,6 @@ a {
   50% { transform: translateY(10px) }
   100% { transform: translateY(-5px) }
 } */
-
 
 /* navbar new */
 .overlay {
@@ -174,7 +170,7 @@ a {
   color: #818181;
   display: block;
   transition: 0.3s;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-weight: 700;
 }
 
@@ -223,15 +219,15 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
-.black-menu .line{
+.black-menu .line {
   background-color: black;
 }
 
-.white-menu .line{
+.white-menu .line {
   background-color: white;
 }
 
-.black-menu2 .line{
+.black-menu2 .line {
   background-color: black;
 }
 
@@ -305,7 +301,7 @@ a {
   position: absolute;
   z-index: 5;
   left: 24%;
-  top: 28%;
+  top: 14%;
   animation-name: translate-horizontal;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
@@ -321,7 +317,7 @@ a {
   animation-timing-function: linear;
   animation-duration: 15s;
   left: 40%;
-  top: 20%;
+  top: 10%;
 }
 
 .cloud3 {
@@ -332,17 +328,21 @@ a {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-duration: 15s;
-  top: 27%;
+  top: 13%;
   left: 53%;
 }
 
 #landing {
-  height: 100vh;
+  height: 200vh;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   overflow-x: hidden;
   position: relative;
+}
+
+.arhn_landing {
+  margin-top: 18vh;
 }
 
 .view {
@@ -390,17 +390,69 @@ a {
   height: 67.5px;
 }
 
-@media only screen and (max-width:600px) {
+.nitd {
+  display: inline-block;
+  position: absolute;
+  width: auto;
+  left: 28vw;
+  top: 15vh;
+  text-align: right;
+  padding-right: 1vw;
+  z-index: 5;
+}
+
+.nitd img {
+  width: 7vw;
+  height: auto;
+}
+
+.nitd-black {
+  display: inline-block;
+  position: absolute;
+  width: auto;
+  left: 28vw;
+  top: 15vh;
+  text-align: right;
+  padding-right: 1vw;
+  z-index: 5;
+}
+
+.nitd-black img {
+  width: 7vw;
+  height: auto;
+}
+
+.winkies {
+  display: inline-block;
+  position: absolute;
+  width: auto;
+  left: 37vw;
+  top: 12vh;
+  text-align: right;
+  z-index: 5;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 700;
+}
+
+.winkies h1{
+  display:inline;
+}
+
+.winkies img {
+  width: 7vw;
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
   .patron {
-    right:19vw;
-    top:2rem;
+    right: 19vw;
+    top: 2rem;
   }
   .patron img {
     width: 70vw;
     height: auto;
   }
 }
-
 
 .patron-black {
   position: absolute;
@@ -415,18 +467,16 @@ a {
   height: 67.5px;
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width: 600px) {
   .patron-black {
-    right:19vw;
-    top:2rem;
+    right: 19vw;
+    top: 2rem;
   }
   .patron-black img {
     width: 70vw;
     height: auto;
   }
 }
-
-
 
 .ui-resizable-e {
   width: 25px !important;
@@ -538,13 +588,31 @@ a {
   line-height: 1em;
 }
 
-
-@media only screen and (max-width:600px) {
+@media only screen and (max-width: 600px) {
   .dates {
     top: 55vh;
   }
+  .arhn_landing {
+    margin-top: 0;
+  }
+  .nitd,.nitd-black{
+    display: none;
+  }
+  .winkies{
+    text-align: center;
+  }
+  .winkies img{
+    width: 22vw;
+  }
+  .winkies h1{
+    display:block;
+  }
+  .new_sponsors_box h1{
+    font-size: 2rem;
+  }
   .section_wrap {
     padding-bottom: 22vh;
+    /* align-items: center; */
   }
   .image-info p {
     font-size: 1.75rem;
@@ -557,12 +625,10 @@ a {
   }
 }
 
-
-
 /* events */
 
 .events {
-  color:white;
+  color: white;
 }
 
 .postop {
@@ -625,8 +691,6 @@ a {
   padding-bottom: 5rem;
 }
 
-
-
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
@@ -645,14 +709,13 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
-  .events_txt{
+  .events_txt {
     margin-left: 4rem;
   }
-  .workshop_heading{
+  .workshop_heading {
     font-size: 4.5rem;
   }
 }
-
 
 /* major attractions */
 .mjrattractions {
@@ -687,15 +750,27 @@ a {
 }
 
 .sponsors_box {
+  padding-top: 5vh;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.new_sponsors_box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15vh;
+  text-align: center;
 }
 
 .img_holder {
   width: auto;
-  height: 40px;
-  margin: 4rem 5rem;
+  height: 7vh;
+  margin: 2rem 5rem;
+}
+
+.sponsor_post{
+  font-size: 2.5rem;
 }
 
 /* team  */
@@ -717,7 +792,7 @@ a {
 }
 
 .content h3 {
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   padding-top: 1.2rem;
   text-align: center;
   font-weight: 700;
@@ -800,6 +875,22 @@ a {
 @media screen and (max-width: 600px) {
   /*landing */
 
+  #landing{
+    height: 300vh;
+  }
+
+ .top_photu{
+   margin-top: 6vh;
+ }
+
+  #my_resizable{
+    margin-top: 33vh;
+  }
+
+  .gif{
+    margin-top: 33vh;
+  }
+
   .ml13 {
     font-size: 1.5em;
     text-transform: uppercase;
@@ -846,7 +937,6 @@ a {
   /* events */
 }
 
-
 .ath-box {
   margin-left: 10vw;
 }
@@ -858,7 +948,6 @@ a {
 }
 
 @media screen and (max-width: 600px) {
-
   .ath-box {
     margin-left: 0;
   }
@@ -1051,12 +1140,10 @@ a {
 }
 
 .back {
-
   height: 100vh;
   bottom: 5.2vh;
   left: 5vw;
   position: relative;
-
 }
 
 .wdct {

@@ -210,11 +210,21 @@ $win
       rgb2 = [76.5, 76.5, 76.5];
       $(".patron-black").css("opacity","1");
     }
+    if (m / w > 0.2 && m / w < 0.5) {
+      $(".nitd-black").css("opacity","0");
+      rgb2 = [200, 200, 200];
+    } else if (m / w > 0.5 && m / w < 0.7) {
+      rgb2 = [76.5, 76.5, 76.5];
+      $(".nitd-black").css("opacity","1");
+    }
 
     var scroll = $(window).scrollTop();
 
     if (scroll < 1000) {
       $(".dates").css("color", "rgb(" + rgb2.join(",") + ")");
+      $(".winkies").css("color", "rgb(" + rgb2.join(",") + ")");
+      $(".nitd").css("color", "rgb(" + rgb2.join(",") + ")");
+      $(".new_sponsors_box").css("color", "rgb(" + rgb2.join(",") + ")");
       $(".line").css("background-color", "rgb(" + rgb2.join(",") + ")");
       $(".fa-icon").css("color", "rgb(" + rgb2.join(",") + ")");
     }
