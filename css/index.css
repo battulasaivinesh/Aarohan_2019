@@ -679,6 +679,10 @@ a {
   font-size: 2rem;
 }
 
+.sponsor_post1{
+  font-size: 2.5rem;
+}
+
 .workshop_heading {
   font-size: 6rem;
   text-align: center;
@@ -769,9 +773,7 @@ a {
   margin: 2rem 5rem;
 }
 
-.sponsor_post{
-  font-size: 2.5rem;
-}
+
 
 /* team  */
 .team {
